@@ -5,11 +5,12 @@ body {
     background-attachment: fixed;
 }
 
-.content {
-    background-color: none;
+#navigation {
+    font-size: 20px;
+    background-color: transparent;
 }
 
-.navigation a {
+#navigation a {
     color: white !important;
 }
 
