@@ -68,7 +68,7 @@ task :migrate_data_to_templates do
             puts "#{filepath} already exists, skipping"
           end
 
-          items[project_name] << '<div class="item"> <img src="' +  
+          items[project_name] << '<div class="item"> <img src="..' +  
                                            webpath +
                                            '" title="' + 
                                            Sanitize.fragment(blob["Name"]) + 
