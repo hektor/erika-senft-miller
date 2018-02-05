@@ -6,8 +6,8 @@
 title: Erika Senft Miller
 description: >- # this means to ignore newlines until "baseurl:"
   The is the test area for ESM.
-baseurl: "/" 
-url: "https://alder-studio.github.io/erika-senft-miller/" 
+baseurl: "/erika-senft-miller/"
+url: "" 
 collections:
   projects:
     output: true
