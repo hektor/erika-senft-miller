@@ -1,41 +1,27 @@
 /* Page Structure */
 
-#project-title {
-    max-width: 1200px;
+.project-title {
+    max-width: 1400px;
+    font-size: 60px;
     margin: auto;
-    padding: 30px;
-}
-
-#project-title:after {
-    content: "";
-    display: table;
-    clear: both;
 }
 
 #project-text {
-    max-width: 1200px;
-    margin: auto;
-}
-
-#project-text:after {
-    content: "";
-    display: table;
-    clear: both;
+    border-top: 1px solid whitesmoke;
+    border-bottom: 1px solid whitesmoke;
 }
 
 .description {
     display: inline-block;
-    width: 60%;
+    width: 60vw;
     float: left;
     vertical-align: top;
-    padding: 30px;
 }
 
 .info {
     display: inline-block;
-    width: 35%;
+    width: 30vw;
     float: right;
-    padding: 30px;
 }
 
 #info {
@@ -57,29 +43,20 @@
 /* Grid Filters */
 
 #filters {
-    max-width: 1200px;
+    max-width: 1400px;
     margin: auto;
 }
 
-#filters:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-
 .label {
-    display: inline-block;
-    width: 60%;
-    padding: 30px;
+    width: 40vw;
     float: left;
 }
 
 .triggers {
     display: inline-block;
-    width: 35%;
-    padding: 30px;
+    width: 30vw;
     float: right;
+    text-align: left;
 }
 
 .trigger.tablink {
@@ -140,18 +117,14 @@
 /* Projects-Mobile */
 
 @media only screen and (max-width: 640px) {
-    .project-description {
-        width: 100%;
+    .description {
+        width: 100% !important;
         display: inline-block;
     }
     
-    .project-info {
-        width: 100%;
+    .info {
+        width: 100% !important;
         display: inline-block;
-    }
-    
-    .project-description p {
-    margin-right: 0px;
     }
 }
 
