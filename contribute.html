@@ -4,21 +4,24 @@ title: Contribute
 permalink: /contribute/
 ---
 
-<div class="row">
-    
+<div class="row-small">
     <div class="row-inner">
-        <h2>Photo</h2> 
-        <cloudstitch-handlebars user="alderstudio" app="esm-photo" class="form"></cloudstitch-handlebars>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt ultricies blandit. Quisque maximus purus non neque accumsan ultricies. Donec at ultrices nisl. Phasellus semper sem porttitor metus eleifend feugiat. Curabitur ante massa, suscipit vel ligula sit amet, scelerisque auctor mi. Etiam sit amet libero id ante vehicula elementum. </p>
     </div>
+</div>
 
+<div class="row-small" id="form">
     <div class="row-inner">
-        <h2>Vimeo</h2> 
-        <cloudstitch-handlebars user="alderstudio" app="esm-video" class="form"></cloudstitch-handlebars>
+        <cloudstitch-handlebars user="alderstudio" app="esm-request"></cloudstitch-handlebars>
     </div>
-
+</div>
+  
+<div class="row-medium">
     <div class="row-inner">
-        <h2>Text</h2> 
-        <cloudstitch-handlebars user="alderstudio" app="esm-text" class="form"></cloudstitch-handlebars>
-    </div>
-    
+        <p>What do you want to contribute?</p>
+        <ul><li><a href="{{ site.baseurl}}upload/photo"><div class="square">Upload Photos</div></a></li>
+            <li><a href="{{ site.baseurl}}upload/video"><div class="square">Embed Video</div></a></li>
+            <li><a href="{{ site.baseurl}}upload/text"><div class="square">Add Text</div></a></li>
+        </ul>    
+    </div>    
 </div>

@@ -1,8 +1,10 @@
 /* Mobile */
 @media only screen and (max-width: 640px) {
-    .row-inner {
-        padding: 4vh !important; 
-    }
+    .row-inner { padding: 4vh !important; }
+    .navigation-inner { padding: 4vh !important; }
+    .footer-inner { padding: 4vh !important; }
+    .col-left { width: 100% !important; }
+    .col-right { width: 100% !important; }
 }
 
 
@@ -78,6 +80,18 @@ img {
     width: 100%;
 }
 
+.nav-left {
+    width: 50%;
+    float: left;
+    padding-right: 30px;
+}
+
+.nav-right {
+    width: 50%;
+    float: left;
+    text-align: right;
+}
+
 a.page-link { padding-left: 15px; }
 
 .footer {
@@ -106,7 +120,6 @@ a.page-link { padding-left: 15px; }
 .col-right {
     width: 50%;
     float: left;
-    text-align: right;
 }
 
 /* Typography */
@@ -130,15 +143,9 @@ a:hover {
 
 /*Form*/
 
-.form {
-    text-align: left;
-    padding: 20px;
-    background: whitesmoke;
-}
-
-.demo-text, .magic-form {
-   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-   font-weight: 300;
+#form {
+    border-top: 1px solid whitesmoke;
+    border-bottom: 1px solid whitesmoke;
 }
 
 .project {
@@ -178,9 +185,12 @@ button:hover {
 }
 
 textarea {
-  width: 100%;
-  min-height: 100px;
-  -webkit-box-sizing: border-box;
+    min-width: 100%;
+    display: block;
+    padding: 20px 10px;
+    font-size: 16px;
+    min-height: 120px;
+    -webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }

@@ -68,7 +68,7 @@ task :migrate_data_to_templates do
             puts "#{filepath} already exists, skipping"
           end
 
-          items[project_name] << '<div class="item"> <img src="..' +  
+          items[project_name] << '<div class="item-image"> <img src="..' +  
                                            webpath +
                                            '" title="' + 
                                            Sanitize.fragment(blob["Name"]) + 
@@ -89,7 +89,7 @@ task :migrate_data_to_templates do
             next
           end
 
-          items[project_name] << ('<div class="item"><iframe src="https://player.vimeo.com/video/'+ Sanitize.fragment(blob["VideoID"]) + '" width="100%" height="auto" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>')
+          items[project_name] << ('<div class="item-video"><iframe src="https://player.vimeo.com/video/'+ Sanitize.fragment(blob["VideoID"]) + '" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>')
         elsif file =~ /esm-text.json/
           unless blob["Text"] && blob["Name"]  && blob["Project"]
             puts "Invalid text submission!: "
@@ -97,7 +97,7 @@ task :migrate_data_to_templates do
             next 
           end
           # TODO (do we want to credit commentors)
-          items[project_name] << ('<div class="item"><div class="name">' +
+          items[project_name] << ('<div class="item-text"><div class="name">' +
                                   Sanitize.fragment(blob["Name"]) + 
                                   '</div><p>' + 
                                   Sanitize.fragment(blob["Text"]) + 
