@@ -1,9 +1,10 @@
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
-    
-{% include head.html %}
-    
+{% include _head.html %}
+
+<body>   
  <div id="content">
-     {% include navigation.html %}
+     {% include _navigation.html %}
      {{ content }}
-     {% include footer.html %}
+     {% include _footer.html %}
  </div>
+<script src="{{ site.baseurl }}assets/site.js"></script>
+</body>

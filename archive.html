@@ -9,10 +9,9 @@ permalink: /archive/
     {% assign items = site.projects | sort: 'order' %}
         {% assign projects = items | reverse %}
             {% for project in items %}
-                <div class="project-title">
+                <div class="title-black">
                     <a href="{{ project.url | relative_url }}" alt="{{ project.title }}">{{ project.title }}</a>
                 </div>
         {% endfor %}
     </div>
 </div>
-

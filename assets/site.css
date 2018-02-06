@@ -1,12 +1,32 @@
-/* Mobile */
-@media only screen and (max-width: 640px) {
-    .row-inner { padding: 4vh !important; }
-    .navigation-inner { padding: 4vh !important; }
-    .footer-inner { padding: 4vh !important; }
-    .col-left { width: 100% !important; }
-    .col-right { width: 100% !important; }
+/* Banners */
+
+#info-banner{
+    background-image: url( "../assets/images/esm-home.jpg");
+    background-position: center;
+    background-attachment: fixed;
 }
 
+#home-banner{
+    background-image: url( "../assets/images/esm-home.jpg");
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Mobile */
+
+@media only screen and (max-width: 640px) {
+    .col-left { width: 100% !important; }
+    .col-right { width: 100% !important; }
+    .title-white { font-size: 24px !important; }
+    .title-black { font-size: 24px !important; }
+}
+
+ul {
+    -webkit-padding-start: 0;
+    list-style-type: none;
+    font-size: 16px;
+    line-height: 1.4em;
+}
 
 /* Universal */
 
@@ -25,18 +45,21 @@ html,body {
 }
 
 html>body .content { height:auto; }
-#content { min-height:100%; }
+#content { 
+    min-height: 100vh;
+}
 
 .row {
     display: flex;
     width: 100%;
     justify-content: center;
     flex-direction: column;
-    min-height: 85vh;
+    min-height: 87vh;
+    border-bottom: 1px solid whitesmoke;
 }
 
 .row-inner { 
-    padding: 10vh 2.5vh; 
+    padding: 2.5vh; 
     max-width: 1400px;
     margin: auto;
     width: 100%;
@@ -47,7 +70,17 @@ html>body .content { height:auto; }
     width: 100%;
     justify-content: center;
     flex-direction: column;
-    min-height: 10vh;
+    min-height: 20vh;
+    border-bottom: 1px solid whitesmoke;
+}
+
+.row-xs {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 5vh;
+    border-bottom: 1px solid whitesmoke;
 }
 
 .row-medium {
@@ -56,6 +89,7 @@ html>body .content { height:auto; }
     justify-content: center;
     flex-direction: column;
     min-height: 40vh;
+    border-bottom: 1px solid whitesmoke;
 }
 
 img {
@@ -72,6 +106,7 @@ img {
     align-items: center;
     justify-content: center;
     border-bottom: 1px solid whitesmoke;
+    font-size: .9em;
 }
 
 .navigation-inner {
@@ -97,9 +132,11 @@ a.page-link { padding-left: 15px; }
 .footer {
     min-height: 2.5vh;
     display: flex;
-    align-items: center;
     justify-content: center;
     border-top: 1px solid whitesmoke;
+    background-color: white;
+    width: 100%;
+    font-size: .9em;
 }
 
 .footer-inner {
@@ -110,16 +147,80 @@ a.page-link { padding-left: 15px; }
 
 /* Columns */
 
-
-.col-left {
-    width: 50%;
+.col-12 {
+    width: 100%;
     float: left;
-    padding-right: 30px;
+    padding-right: 2.5vh;
 }
 
-.col-right {
+.col-11 {
+    width: 91.667%;
+    float: left;
+    padding-right: 2.5vh;
+}
+
+.col-10 {
+    width: 83.333%;
+    float: left;
+    padding-right: 2.5vh;
+}
+
+.col-9 {
+    width: 75%;
+    float: left;
+    padding-right: 2.5vh;
+}
+
+.col-8 {
+    width: 66.667%;
+    float: left;
+    padding-right: 2.5vh;
+}
+
+.col-7 {
+    width: 58.333%;
+    float: left;
+    padding-right: 2.5vh;
+}
+
+.col-6 {
     width: 50%;
     float: left;
+    padding-right: 2.5vh;
+}
+
+.col-5 {
+    width: 41.667%;
+    float: left;
+    padding-right: 2.5vh;
+}
+
+.col-4 {
+    width: 33.333%;
+    float: left;
+    padding-right: 2.5vh;
+}
+
+.col-3 {
+    width: 25%;
+    float: left;
+    padding-right: 2.5vh;
+}
+
+/* Mobile */
+@media only screen and (max-width: 640px) {
+    .col-1 { width: 100% !important; }
+    .col-2 { width: 100% !important; }
+    .col-3 { width: 100% !important; }
+    .col-4 { width: 100% !important; }
+    .col-5 { width: 100% !important; }
+    .col-6 { width: 100% !important; }
+    .col-7 { width: 100% !important; }
+    .col-8 { width: 100% !important; }
+    .col-9 { width: 100% !important; }
+    .col-10 { width: 100% !important; }
+    .col-11 { width: 100% !important; }
+    .col-12 { width: 100% !important; }
 }
 
 /* Typography */
@@ -133,12 +234,55 @@ a {
     text-decoration: none;
 }
 
+p a {
+    color: blue;
+}
+
 a:hover {
     color: blue;
 }
 
-.project-title {
+h2 {
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+.title-black {
     font-size: 36px;
+    line-height: 1.4em;
+}
+
+.title-white {
+    margin: 2.5vh 0;
+    color: white;
+    font-size: 36px;
+    line-height: 1.4em;
+}
+
+.title-white a {
+    color: yellow;
+}
+
+/* Elements */
+
+.button {
+    color: blue;
+    display: inline-block;
+    margin: 30px 0;
+}
+
+.social {
+    display: inline-block;
+    margin: 1vh 0;
+    font-size: 18px;
+}
+
+.social i {
+    margin-right: 10px;
+}
+
+.social:hover {
+    color: blue;
 }
 
 /*Form*/
@@ -193,4 +337,212 @@ textarea {
     -webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
+}
+
+/* Banner */
+
+.banner-title {
+    font-size: 36px;
+    margin: .5vh 0;
+}
+
+.banner-excerpt {
+    opacity: .4;
+    margin: .5vh 0;
+}
+
+/* Project Details */
+
+.accordion {
+    cursor: pointer;
+    width: 100%;
+    max-width: 1400px;
+    margin: auto;
+    text-align: left;
+    font-size: 18px;
+}
+
+.accordion:hover {
+    color: blue;
+}
+
+.accordion.open {
+    color: blue;
+    margin-bottom: 20px;
+}
+
+.accordion:after {
+    font-family: 'Font Awesome 5 Pro';
+    font-weight: 900;
+    content: "\f067";
+    font-size: 13px;
+    float: right;
+}
+
+.open:after {
+    color: blue;
+    content: "\f068";
+}
+
+.panel {
+    max-width: 1400px;
+    margin: auto;
+    display: none;
+    overflow: hidden;
+}
+
+
+/* Filter */
+
+#filters {
+    cursor: pointer;
+    width: 100%;
+    max-width: 1400px;
+    margin: auto;
+    padding: 2.5vh;
+    text-align: left;
+    min-height: 5vh;
+}
+
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+.tablinks {
+    display: inline-block;
+}
+
+.tablinks.active {
+    color: blue;
+}
+
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+.tab button:hover {
+    background-color: #ddd;
+}
+
+.tab button.active {
+    background-color: #ccc;
+}
+
+.tabcontent {
+    display: none;
+}
+
+.label {
+    display: inline-block;
+    width: 40%;
+    float: left;
+    font-size: 18px;
+}
+
+.triggers {
+    display: inline-block;
+    text-align: right;
+    width: 60%;
+    float: left;
+}
+
+/* Project Grid */
+
+.gallery {
+    display: block;
+    padding: 2.5vh;
+    max-width: 1400px;
+    margin: auto;
+    width: 100%;
+}
+
+.gallery p {
+    text-align: center;
+}
+
+.grid {
+    -moz-column-gap: 1.5em;
+    -webkit-column-gap: 1.5em;
+    column-gap: 1.5em;
+    font-size: .85em;
+}
+
+.item-video { 
+    position: relative; 
+    padding-bottom: 56.25%; 
+    height: 0;
+    margin: 0 0 1.5em;
+    overflow: hidden; 
+    max-width: 100%; 
+    height: auto; 
+} 
+
+.item-video iframe, .item-video object, .item-video embed { 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+}
+
+.item-text {
+    display: inline-block;
+    background: #fff;
+    margin: 0 0 1.5em;
+    width: 100%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.item-image {
+    display: inline-block;
+    background: #fff;
+    margin: 0 0 1.5em;
+    width: 100%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+/* Projects-Mobile */
+
+
+@media only screen and (min-width: 640px) {
+    .grid {
+        -moz-column-count: 1;
+        -webkit-column-count: 1;
+        column-count: 1;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .grid {
+        -moz-column-count: 2;
+        -webkit-column-count: 2;
+        column-count: 2;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .grid {
+        -moz-column-count: 3;
+        -webkit-column-count: 3;
+        column-count: 3;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .grid {
+        width: 100%;
+    }
 }
