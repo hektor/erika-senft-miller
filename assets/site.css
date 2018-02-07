@@ -324,14 +324,18 @@ h2 {
 }
 
 button {
-  border: 1px solid #333;
-  background-color: #ddd;
-  padding: 15px 30px;
+  border: 1px solid blue;
+  background-color: white;
+  color: blue;
+ font-size: 18px;
+  padding: 20px 40px;
   margin: 20px 0;
+  width: 100%;
 }
 
 button:hover {
-  opacity: .5;
+  background-color: blue;
+  color: white;
 }
 
 textarea {
@@ -374,21 +378,15 @@ textarea {
 
 .accordion.open {
     color: blue;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
-.accordion:after {
+.accordion i {
     font-family: 'Font Awesome 5 Pro';
-    font-weight: 900;
-    content: "\f067";
-    font-size: 13px;
+    font-weight: 400;
     float: right;
 }
 
-.open:after {
-    color: blue;
-    content: "\f068";
-}
 
 .panel {
     max-width: 1400px;

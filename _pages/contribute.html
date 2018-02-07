@@ -4,25 +4,17 @@ title: Contribute
 permalink: /contribute/
 ---
 <div class="row">
-<div class="row-medium">
-    <div class="row-inner">
-        <div class="title-black">I’m inviting my collaborators, peers, and friends to contribute their varying perspectives of our work together to this site in the form of photos, videos, writing, and anything else you can dream.</div>
-    </div>
-</div>
-
-<div class="row-medium" id="form">
+    <div class="row-medium">
         <div class="row-inner">
-            <div class="row-small">
-                <p>Have something you'd like to add to this site? We ask that new contributors request access. Add your info and get simple instructions for how to participate.</p>
-            </div>
-            <div class="row-small">
-                <form method="POST" action="//api.cloudstitch.com/alderstudio/esm-data/user">
-                    <div class="form-group"><input type="text" name="first" placeholder="First" class="form-control" required /></div>
-                    <div class="form-group"><input type="text" name="last" placeholder="Last" class="form-control" required /></div>
-                    <div class="form-group"><input type="text" name="email" placeholder="Email" class="form-control" required /></div>
-                    <div class="form-group"><input type="submit" class="button" /></div>
-                </form>
-            </div>
+            <div class="title-black">I’m inviting my collaborators, peers, and friends to contribute their  perspectives to this site in the form of photos, videos and writing.</div>
+        </div>
+    </div>
+    <div class="row-medium">
+        <div class="row-inner">
+            <p>Have something you'd like to add to this site? We ask that new contributors request access. Add your info and get simple instructions for how to participate.</p>
+            <br>
+            <br>
+            {% include _forms/request-access.html %}
         </div>
     </div>
 </div>

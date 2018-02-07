@@ -1,0 +1,39 @@
+---
+layout: upload
+title: Upload
+permalink: /upload/
+---
+
+<div class="row-medium">
+        <div class="row-inner">
+            <div class="title-black">Add Content</div> 
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eleifend tempor odio in mollis. In lobortis pulvinar blandit. Curabitur eu sodales ipsum, ac vulputate lacus. Phasellus non porta dolor, ac viverra lectus.</p>   
+        </div>
+    </div>
+
+<div class="row-xs">
+    <div class="row-inner">
+        <div class="accordion"><i class="fas fa-camera"></i>Upload a Photo</div>
+            <div class="panel">
+                {% include _forms/photo-upload.html %}
+            </div> 
+    </div>
+</div>
+
+<div class="row-xs">
+    <div class="row-inner">
+        <div class="accordion"><i class="far fa-video"></i>Embed from Vimeo</div>
+            <div class="panel">
+                {% include _forms/video-embed.html %}
+            </div>
+    </div>
+</div>
+
+<div class="row-xs">
+    <div class="row-inner">
+        <div class="accordion"><i class="fas fa-align-left"></i>Add Text</div>
+            <div class="panel">
+                {% include _forms/add-text.html %}
+            </div>
+    </div>
+</div>
