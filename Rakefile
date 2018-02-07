@@ -108,7 +108,7 @@ task :migrate_data_to_templates do
   end
   items.keys.select{|x| x != ""}.each do |proj|
     items_list = items[proj].shuffle
-    include_file = "_includes/#{proj}-items.html"
+    include_file = "_includes/_projects/#{proj}-items.html"
     puts "writing updated " + include_file
     File.write(include_file, items_list.join("\n"))
   end
