@@ -4,8 +4,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Erika Senft Miller
-description: >- # this means to ignore newlines until "baseurl:"
-  The is the test area for ESM.
+description: A conceptual performance artist actively exploring and embracing the power of movement through rigorous academic research, a careful pattern of creative productivity, and in-depth multimedia integration and documentation of her work.
 baseurl: "/erika-senft-miller/"
 url: "" 
 collections:
@@ -15,6 +14,9 @@ collections:
   forms:
     output: true
     permalink: /upload/:name
+  pages:
+    output: true
+    permalink: /:title/  
 
 kramdown:  
   parse_block_html: true
