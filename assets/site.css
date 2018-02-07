@@ -257,6 +257,10 @@ h2 {
     line-height: 1.4em;
 }
 
+.title-black a {
+    color: blue;
+}
+
 .title-white {
     margin: 2.5vh 0;
     color: white;

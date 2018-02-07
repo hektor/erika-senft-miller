@@ -1,1 +1,22 @@
-<cloudstitch-handlebars user="alderstudio" app="esm-text"></cloudstitch-handlebars>
+<form method="POST" action="//api.cloudstitch.com/alderstudio/esm-data/text">
+    <div class="form-group">
+        <textarea name="text" placeholder="Type or paste text here..." required></textarea>
+    </div>
+    
+    <div class="form-group">
+        <input type="text" name="name" placeholder="Author" class="form-control" required />
+    </div>
+   
+    {% assign items = site.projects | sort: 'order' %}
+        {% assign projects = items | reverse %}
+            {% for project in items %}
+            <div class="project"><input type="radio" name="project" required value="{{ project.title }}">
+                <label for="project">{{ project.title }}</label>
+            </div>
+        {% endfor %}
+    
+    <div class="form-group">
+        <button type="submit">Submit</button>
+    </div>
+    <input type="hidden" name="_redirect" value="http://localhost:4000/erika-senft-miller/confirmation/" />
+</form>

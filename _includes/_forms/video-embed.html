@@ -1,1 +1,21 @@
-<cloudstitch-handlebars user="alderstudio" app="esm-video"></cloudstitch-handlebars>
+<form method="POST" action="//api.cloudstitch.com/alderstudio/esm-data/video">
+    <div class="form-group">
+        <input type="text" name="name" placeholder="Video Credit" class="form-control" required />
+    </div>
+    <div class="form-group">
+        <input type="text" name="videoid" placeholder="Video ID" class="form-control" required />
+    </div>
+   
+    {% assign items = site.projects | sort: 'order' %}
+        {% assign projects = items | reverse %}
+            {% for project in items %}
+            <div class="project"><input type="radio" name="project" required value="{{ project.title }}">
+                <label for="project">{{ project.title }}</label>
+            </div>
+        {% endfor %}
+    
+    <div class="form-group">
+        <button type="submit">Submit</button>
+    </div>
+    <input type="hidden" name="_redirect" value="http://localhost:4000/erika-senft-miller/confirmation/" />
+</form>
