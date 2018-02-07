@@ -133,7 +133,6 @@ a.page-link { padding-left: 15px; }
     min-height: 2.5vh;
     display: flex;
     justify-content: center;
-    border-top: 1px solid whitesmoke;
     background-color: white;
     width: 100%;
     font-size: .9em;
@@ -203,6 +202,12 @@ a.page-link { padding-left: 15px; }
 
 .col-3 {
     width: 25%;
+    float: left;
+    padding-right: 2.5vh;
+}
+
+.col-2 {
+    width: 12.5%;
     float: left;
     padding-right: 2.5vh;
 }
