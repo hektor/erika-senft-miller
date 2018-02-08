@@ -116,7 +116,7 @@ img {
 
 .nav-right {
     width: 50%;
-    float: left;
+    float: right;
     text-align: right;
 }
 
@@ -129,6 +129,7 @@ a.page-link { padding-left: 15px; }
     background-color: white;
     width: 100%;
     font-size: .9em;
+    border-top: 1px solid whitesmoke;
 }
 
 .footer-inner {
@@ -390,7 +391,7 @@ textarea {
 
 .accordion-custom.open {
     color: blue;
-    margin-bottom: 30px;
+    margin-bottom: 2.5vh;
 }
 
 .accordion-custom i {
@@ -420,7 +421,7 @@ textarea {
 
 .accordion.open {
     color: blue;
-    margin-bottom: 30px;
+    margin-bottom: 2.5vh;
 }
 
 .accordion.open:after {
