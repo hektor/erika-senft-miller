@@ -5,16 +5,38 @@
     .col-right { width: 100% !important; }
     .title-white { font-size: 24px !important; }
     .title-black { font-size: 24px !important; }
+
+
+/* Preloader */
+
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: white;
+  z-index: 100;
 }
 
-ul {
-    -webkit-padding-start: 0;
-    list-style-type: none;
-    font-size: 16px;
-    line-height: 1.4em;
+#status {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  background-image: url(../loader-whitebg.gif);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: -100px 0 0 -100px;
 }
 
 /* Universal */
+    
+body {
+  overflow: hidden;
+}
+
 
 *, *:before, *:after {
   -webkit-box-sizing: border-box;
@@ -215,6 +237,11 @@ a.page-link { padding-left: 15px; }
 }
 
 /* Typography */
+
+ul {
+    -webkit-padding-start: 0;
+    list-style-type: none;
+}
 
 .blue {
     color: blue;

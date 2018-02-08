@@ -1,11 +1,15 @@
 {% include head.html %}
+<script src="{{ site.baseurl }}assets/js/preloader.js"></script>
 
-<body>   
+<body>
+    <div id="preloader">
+        <div id="status"></div>
+    </div>
     <div id="content">
         {% include navigation.html %}
-        {{ content }}
+            {{ content }}
         {% include footer.html %}
     </div>
-    <script src="{{ site.baseurl }}assets/js/toggle.js"></script>
     <script src="{{ site.baseurl }}assets/js/accordion.js"></script>
+    <script src="{{ site.baseurl }}assets/js/toggle.js"></script>
 </body>

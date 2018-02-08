@@ -1,9 +1,12 @@
 {% include head.html %}
-
+<script src="{{ site.baseurl }}assets/js/preloader-home.js"></script>
 <link rel="stylesheet" href="{{ site.baseurl }}assets/css/home.css">
 <link rel="stylesheet" href="{{ site.baseurl }}assets/css/fontawesome-all.css">
 
 <body>
+    <div id="preloader">
+        <div id="status"></div>
+    </div>
     <div id="content">
         {{ content }}
     </div>
