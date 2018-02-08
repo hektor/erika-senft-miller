@@ -384,6 +384,12 @@ textarea {
     font-size: 18px;
 }
 
+.accordion:after {
+    content: '\f067';
+    float: right;
+    font-family: 'Font Awesome 5 Pro';
+}
+
 .accordion:hover {
     color: blue;
 }
@@ -393,10 +399,8 @@ textarea {
     margin-bottom: 30px;
 }
 
-.accordion i {
-    font-family: 'Font Awesome 5 Pro';
-    font-weight: 400;
-    float: right;
+.accordion.open:after {
+    content: '\f068';
 }
 
 
