@@ -387,7 +387,7 @@ textarea {
 }
 
 .accordion-custom i {
-    font-family: 'Font Awesome 5 Pro';
+    font-family: 'FontAwesome';
     font-weight: 100;
     float: right;
 }
@@ -402,7 +402,7 @@ textarea {
 }
 
 .accordion:after {
-    font-family: 'Font Awesome 5 Pro';
+    font-family: 'FontAwesome';
     content: '\f067';
     float: right;
 }
