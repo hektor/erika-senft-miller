@@ -1,7 +1,3 @@
-body {
-  overflow: hidden;
-}
-
 /* Preloader */
 
 #preloader {
@@ -30,10 +26,15 @@ body {
 
 @media only screen and (max-width: 640px) {
     .row-inner { padding: 2.5vh !important; }
+    .vidcover { display: none !important; }
+    .fullvid { display: none !important; }
 }
+
+/* Structure */
 
 body {
     background-color: black;
+    overflow: hidden;
 }
 
 .vidcover {
