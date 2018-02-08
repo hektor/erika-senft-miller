@@ -6,12 +6,6 @@
     background-attachment: fixed;
 }
 
-#home-banner{
-    background-image: url( "../assets/images/esm-home.jpg");
-    background-position: center;
-    background-attachment: fixed;
-}
-
 /* Mobile */
 
 @media only screen and (max-width: 640px) {
@@ -55,7 +49,6 @@ html>body .content { height:auto; }
     justify-content: center;
     flex-direction: column;
     min-height: 85vh;
-    border-bottom: 1px solid whitesmoke;
 }
 
 .row-inner { 
@@ -471,10 +464,6 @@ textarea {
     width: 100%;
 }
 
-.gallery p {
-    text-align: center;
-}
-
 .grid {
     -moz-column-gap: 1.5em;
     -webkit-column-gap: 1.5em;
@@ -508,6 +497,12 @@ textarea {
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
+    background-color: whitesmoke;
+}
+
+.item-text p {
+    padding: 30px;
+    font-family: monospace;
 }
 
 .item-image {

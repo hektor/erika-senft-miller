@@ -1,0 +1,45 @@
+/* Mobile */
+
+@media only screen and (max-width: 640px) {
+    .row-inner { padding: 2.5vh !important; }
+}
+
+#home-banner{
+    background-image: url( "../assets/images/esm-home.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%;
+}
+
+.title-white {
+    font-size: 28px;
+}
+
+.home-link {
+    font-size: 28px;
+    color: white;
+    display: inline-block;
+    width: 100%;
+    margin: .5vh 0 !important;
+}
+
+.home-link:hover {
+    color: white;
+    opacity: .5;
+}
+
+.row {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 50vh;
+}
+
+.row-inner { 
+    padding: 5vh; 
+    max-width: 1400px;
+    margin: auto;
+    width: 100%;
+}

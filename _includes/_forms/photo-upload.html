@@ -1,15 +1,17 @@
 <form enctype="multipart/form-data" method="POST" action="//api.cloudstitch.com/alderstudio/esm-data/photo">
-    <div class="form-group">
-        <input type="text" name="name" placeholder="Image Credit" class="form-control" required />
-    </div>
+
     <div class="form-group">
         <input type="file" name="image" id="file" class="inputfile"  required />
+    </div>
+    
+    <div class="form-group">
+        <input type="text" name="name" placeholder="Image Credit" class="form-control" required />
     </div>
    
     {% assign items = site.projects | sort: 'order' %}
         {% assign projects = items | reverse %}
             {% for project in items %}
-            <div class="project"><input type="radio" name="project" required value="{{ project.title }}">
+            <div class="project"><input type="radio" name="project" value="{{ project.title }}" required>
                 <label for="project">{{ project.title }}</label>
             </div>
         {% endfor %}

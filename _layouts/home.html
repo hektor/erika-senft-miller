@@ -1,5 +1,7 @@
----
-layout: default
----
-
-{{ content }}
+{% include head.html %}
+<link rel="stylesheet" href="{{ site.baseurl }}assets/home.css">
+<body>
+    <div id="content">
+        {{ content }}
+    </div>
+</body>

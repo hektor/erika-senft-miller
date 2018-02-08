@@ -11,98 +11,97 @@ end
 task default: :migrate_data_to_templates
 
 DATA_DIR = File.expand_path("../_data/", __FILE__)
+DATA_FILE = File.join(DATA_DIR, "esm-database [api].json")
 desc "Migrate the JSON files located in the data directory into he appropriate project buckets as templates"
 task :migrate_data_to_templates do 
   items = {}
 
-  files = %w{ esm-photo.json esm-text.json esm-video.json }.map{|f| File.join(DATA_DIR, f)}
+  unless File.exist? DATA_FILE
+    puts "missing #{DATA_FILE}, skipping"
+    next
+  end
 
-  files.each do |file|
-    unless File.exist? file
-      puts "missing #{file}, skipping"
-      next
-    end
+  content = JSON.parse(File.read(DATA_FILE))
+  sheets = content.keys
+  approved_sheets = %w{ photo video text }
+  valid_sheets = sheets & approved_sheets
+  valid_sheets.each do |sheet|
+    content[sheet].each do |blob|
+      project_name =  Sanitize.fragment(blob["project"]).downcase.gsub(/[^0-9a-z\-]/, '-')
+      items[project_name] ||= []
 
-    content = JSON.parse(File.read(file))
-    sheets = content.keys
-    sheets.each do |sheet|
-      content[sheet].each do |blob|
-        project_name =  Sanitize.fragment(blob["Project"]).downcase.gsub(/[^0-9a-z\-]/, '-')
-        items[project_name] ||= []
+      if sheet == "photo"
 
-        if file =~ /esm-photo.json/
-
-           unless blob["Photo"] && blob["Name"]  && blob["Project"]
-            puts "Invalid Photo submission!: "
-            puts "  skippping #{blob.inspect}"
-            next 
-           end
-
-          remote_filename, extension =  blob["Photo"].split('/')[-1].split('.')
-          
-          filename = [
-                     project_name, 
-                     Sanitize.fragment(blob["Name"]).downcase.gsub(/[^0-9a-z\-]/, '-'),
-                     remote_filename.downcase.gsub(/[^0-9a-z\-_]/, '-')[0,10],
-          ].join('-') + ".#{extension}"
-
-          root_path = "#{File.join('/', 'assets', project_name, 'images')}"
-          
-          img_dir = File.expand_path(('..' + root_path), __FILE__)
-
-          unless Dir.exist?(img_dir)
-            puts 'creating ' + img_dir
-           `mkdir -p #{img_dir}`
-          end
-
-          filepath = File.join(img_dir, filename)
-          webpath = File.join(root_path, filename)
-          
-          unless File.exist? filepath
-            puts "downloading " + blob["Photo"]
-            remote_file_body = Net::HTTP.get(URI(blob["Photo"]))
-
-            puts "creating " + filepath
-            File.write(filepath, remote_file_body)
-          else
-            puts "#{filepath} already exists, skipping"
-          end
-
-          items[project_name] << '<div class="item-image"> <img src="..' +  
-                                           webpath +
-                                           '" title="' + 
-                                           Sanitize.fragment(blob["Name"]) + 
-                                           '" alt="' + Sanitize.fragment(blob["Name"]) +
-                                           '" /></div>'
-        elsif file =~ /esm-video.json/
-
-          unless blob["VideoID"] && blob["Name"]  && blob["Project"]
-            puts "Invalid video submission!: "
-            puts "  skippping #{blob.inspect}"
-            next 
-          end
-
-          # only allow digit ids
-          unless blob["VideoID"] =~ /^\d+$/
-            puts "Invalid video ID!: "
-            puts "  skippping #{blob.inspect}"
-            next
-          end
-
-          items[project_name] << ('<div class="item-video"><iframe src="https://player.vimeo.com/video/'+ Sanitize.fragment(blob["VideoID"]) + '" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>')
-        elsif file =~ /esm-text.json/
-          unless blob["Text"] && blob["Name"]  && blob["Project"]
-            puts "Invalid text submission!: "
-            puts "  skippping #{blob.inspect}"
-            next 
-          end
-          # TODO (do we want to credit commentors)
-          items[project_name] << ('<div class="item-text"><div class="name">' +
-                                  Sanitize.fragment(blob["Name"]) + 
-                                  '</div><p>' + 
-                                  Sanitize.fragment(blob["Text"]) + 
-                                  '</p></div>')
+        unless blob["image"] && blob["name"]  && blob["project"]
+          puts "Invalid Photo submission!: "
+          puts "  skippping #{blob.inspect}"
+          next 
         end
+
+        remote_filename, extension =  blob["image"].split('/')[-1].split('.')
+
+        filename = [
+          project_name, 
+          Sanitize.fragment(blob["name"]).downcase.gsub(/[^0-9a-z\-]/, '-'),
+          remote_filename.downcase.gsub(/[^0-9a-z\-_]/, '-')[0,10],
+        ].join('-') + ".#{extension}"
+
+        root_path = "#{File.join('/', 'assets', project_name, 'images')}"
+
+        img_dir = File.expand_path(('..' + root_path), __FILE__)
+
+        unless Dir.exist?(img_dir)
+          puts 'creating ' + img_dir
+          `mkdir -p #{img_dir}`
+        end
+
+        filepath = File.join(img_dir, filename)
+        webpath = File.join(root_path, filename)
+
+        unless File.exist? filepath
+          puts "downloading " + blob["image"]
+          remote_file_body = Net::HTTP.get(URI(blob["image"]))
+
+          puts "creating " + filepath
+          File.write(filepath, remote_file_body)
+        else
+          puts "#{filepath} already exists, skipping"
+        end
+
+        items[project_name] << '<div class="item-image"> <img src="..' +  
+          webpath +
+          '" title="' + 
+          Sanitize.fragment(blob["name"]) + 
+          '" alt="' + Sanitize.fragment(blob["name"]) +
+          '" /></div>'
+      elsif sheet == "video"
+
+        unless blob["videoid"] && blob["name"]  && blob["project"]
+          puts "Invalid video submission!: "
+          puts "  skippping #{blob.inspect}"
+          next 
+        end
+
+        # only allow digit ids
+        unless blob["videoid"] =~ /^\d+$/
+          puts "Invalid video ID!: "
+          puts "  skippping #{blob.inspect}"
+          next
+        end
+
+        items[project_name] << ('<div class="item-video"><iframe src="https://player.vimeo.com/video/'+ Sanitize.fragment(blob["videoid"]) + '" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>')
+      elsif sheet == "text"
+        unless blob["text"] && blob["name"]  && blob["project"]
+          puts "Invalid text submission!: "
+          puts "  skippping #{blob.inspect}"
+          next 
+        end
+        # TODO (do we want to credit commentors)
+        items[project_name] << ('<div class="item-text"><p>' +
+                                Sanitize.fragment(blob["text"]) + 
+                                '</p><p>' + 
+                                Sanitize.fragment(blob["name"]) + 
+                                '</p></div>')
       end
     end
   end
