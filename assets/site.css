@@ -223,6 +223,10 @@ a.page-link { padding-left: 15px; }
 
 /* Typography */
 
+.blue {
+    color: blue;
+}
+
 p {
     line-height: 1.5em;
 }
@@ -262,10 +266,6 @@ h2 {
 }
 
 /* Elements */
-
-.press {
-    padding: 0 2em;
-}
 
 .press li {
     padding: .5em 0;
@@ -375,6 +375,30 @@ textarea {
 
 /* Project Details */
 
+.accordion-custom {
+    cursor: pointer;
+    width: 100%;
+    max-width: 1400px;
+    margin: auto;
+    text-align: left;
+    font-size: 24px;
+}
+
+.accordion-custom:hover {
+    color: blue;
+}
+
+.accordion-custom.open {
+    color: blue;
+    margin-bottom: 30px;
+}
+
+.accordion-custom i {
+    font-family: 'Font Awesome 5 Pro';
+    font-weight: 100;
+    float: right;
+}
+
 .accordion {
     cursor: pointer;
     width: 100%;
@@ -385,9 +409,9 @@ textarea {
 }
 
 .accordion:after {
+    font-family: 'Font Awesome 5 Pro';
     content: '\f067';
     float: right;
-    font-family: 'Font Awesome 5 Pro';
 }
 
 .accordion:hover {
@@ -402,6 +426,7 @@ textarea {
 .accordion.open:after {
     content: '\f068';
 }
+
 
 
 .panel {

@@ -4,12 +4,11 @@
     .row-inner { padding: 2.5vh !important; }
 }
 
-#home-banner{
-    background-image: url( "../assets/images/esm-home.jpg");
-    background-position: center;
-    background-attachment: fixed;
+#home-banner {
+    background-image: url(../assets/images/esm-home.jpg);
     background-size: cover;
-    height: 100%;
+    background-attachment: fixed;
+    min-height: 100vh;
 }
 
 .title-white {
@@ -35,11 +34,12 @@
     width: 100%;
     justify-content: center;
     flex-direction: column;
-    min-height: 50vh;
+    min-height: 100vh;
 }
 
-.row-medium {
+.row-small {
     border-bottom: none;
+    margin-top: 60px;
 }
 
 .row-inner { 
