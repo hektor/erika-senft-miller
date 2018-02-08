@@ -11,7 +11,7 @@ end
 task default: :migrate_data_to_templates
 
 DATA_DIR = File.expand_path("../_data/", __FILE__)
-DATA_FILE = File.join(DATA_DIR, "esm-database [api].json")
+DATA_FILE = File.join(DATA_DIR, "esm-data.json")
 desc "Migrate the JSON files located in the data directory into he appropriate project buckets as templates"
 task :migrate_data_to_templates do 
   items = {}

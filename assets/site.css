@@ -184,7 +184,7 @@ a.page-link { padding-left: 15px; }
 .col-5 {
     width: 41.667%;
     float: left;
-    padding-right: 2.5vh;
+    padding-right: 0 2.5vh;
 }
 
 .col-4 {
@@ -263,10 +263,19 @@ h2 {
 
 /* Elements */
 
+.press {
+    padding: 0 2em;
+}
+
+.press li {
+    padding: .5em 0;
+}
+
 .button {
     color: blue;
     display: inline-block;
     margin: 30px 0;
+    cursor: pointer;
 }
 
 .social {
@@ -308,6 +317,13 @@ h2 {
 
 .form-label {
   margin-bottom: 10px;
+}
+
+.form-control:focus {
+    outline: none !important;
+    outline-offset: none !important;
+    border: 1px solid blue;
+    box-shadow: none;
 }
 
 .form-control {

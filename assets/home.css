@@ -22,11 +22,12 @@
     display: inline-block;
     width: 100%;
     margin: .5vh 0 !important;
+    opacity: .3
 }
 
 .home-link:hover {
     color: white;
-    opacity: .5;
+    opacity: 1;
 }
 
 .row {
@@ -35,6 +36,10 @@
     justify-content: center;
     flex-direction: column;
     min-height: 50vh;
+}
+
+.row-medium {
+    border-bottom: none;
 }
 
 .row-inner { 

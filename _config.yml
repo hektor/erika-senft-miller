@@ -9,6 +9,8 @@ collections:
   projects:
     output: true
     permalink: /:collection/:name
+  press:
+    output:    
 
 kramdown:  
   parse_block_html: true
