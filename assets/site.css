@@ -271,6 +271,7 @@ h2 {
 
 .social {
     display: inline-block;
+    color: blue;
     margin: 1vh 0;
     font-size: 18px;
 }
@@ -280,7 +281,7 @@ h2 {
 }
 
 .social:hover {
-    color: blue;
+    color: black;
 }
 
 /*Form*/
