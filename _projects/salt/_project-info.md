@@ -1,9 +1,9 @@
-Oct 9, 2016 
+**Oct 9, 2016**
 
 Vermont Railway Salt Shed  
 Burlington, Vermont
 
-Duration: TBD
+**Duration:** 45 Minutes
 
 **Produced with** Craig Winslow, experiential design  
 Miles Dean, sound design

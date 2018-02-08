@@ -1,7 +1,7 @@
 **Preformances**
 
-- September 10, 2016 (Between Land and Water, performance)  
-- October 2016 (Of Land and Local, installation at Shelburne Farms)
+- September 10, 2016 (*Between Land and Water*, performance)  
+- October 2016 (*Of Land and Local*, installation at Shelburne Farms)
 
 **Duration**  
 

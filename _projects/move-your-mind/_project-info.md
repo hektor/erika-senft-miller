@@ -1,1 +1,3 @@
-Made in collaboration with Anna Senft Miller, Eugene Korsunskiy, Generator Makerspace and King Street Youth Center. Photographed by Renee Greenlee.
+**Made in collaboration with** Anna Senft Miller, Eugene Korsunskiy, Generator Makerspace and King Street Youth Center. 
+
+**Photographer** Renee Greenlee.

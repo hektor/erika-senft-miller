@@ -10,4 +10,4 @@
 **Sound** Miles Dean Ewell  
 **Movement Choir** Erin Duffee, Laura Gordon, Beth Hartmann, Chong Ho Kim, Joy Madden, Anna Senft Miller, Jonathan Silverman, Lida Winfield, Martha Ming Whitfield, Abby Pepin  
 **Photographer** Monika Rivard  
-**Moran Historian** Roger Donnegan
+**Moran Historian** Roger Donegan
