@@ -46,7 +46,7 @@ task :migrate_data_to_templates do
           remote_filename.downcase.gsub(/[^0-9a-z\-_]/, '-')[0,10],
         ].join('-') + ".#{extension}"
 
-        root_path = "#{File.join('/', 'assets', project_name, 'images')}"
+        root_path = "#{File.join('/', 'assets', 'images', project_name )}"
 
         img_dir = File.expand_path(('..' + root_path), __FILE__)
 

@@ -1,11 +1,3 @@
-/* Banners */
-
-#info-banner{
-    background-image: url( "../assets/images/esm-home.jpg");
-    background-position: center;
-    background-attachment: fixed;
-}
-
 /* Mobile */
 
 @media only screen and (max-width: 640px) {
