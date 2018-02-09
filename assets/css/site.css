@@ -32,11 +32,6 @@
 }
 
 /* Universal */
-    
-body {
-  overflow: hidden;
-}
-
 
 *, *:before, *:after {
   -webkit-box-sizing: border-box;
