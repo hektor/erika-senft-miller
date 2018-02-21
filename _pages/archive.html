@@ -6,6 +6,7 @@ permalink: /archive/
 
 <div class="row">
     <div class="row-inner">
+        <div class="projects-list">
     {% assign items = site.projects | sort: 'order' %}
         {% assign projects = items %}
             {% for project in items reversed %}
@@ -13,5 +14,6 @@ permalink: /archive/
                     <a href="{{ project.url | relative_url }}" alt="{{ project.title }}">{{ project.title }}</a>
                 </div>
         {% endfor %}
+        </div>
     </div>
 </div>

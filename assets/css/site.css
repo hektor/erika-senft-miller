@@ -376,6 +376,13 @@ textarea {
 	box-sizing: border-box;
 }
 
+/* Projects List */
+
+.projects-list {
+    position: relative;
+    top: -15vh;
+}
+
 /* Banner */
 
 .banner-title {
@@ -389,6 +396,21 @@ textarea {
 }
 
 /* Project Details */
+
+table {
+    width: 100%;
+    margin: 3em 0;
+    border-collapse: collapse;
+}
+
+tr {
+    height: 2.5em;
+    border-bottom: 1px solid whitesmoke;
+}
+
+table a {
+    color: blue;
+}
 
 .accordion-custom {
     cursor: pointer;
