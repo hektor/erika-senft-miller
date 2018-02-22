@@ -2,7 +2,7 @@
 	function loadPage(pwd) {
 		var hash= pwd;
 		hash= Sha1.hash(pwd);
-		var url= hash ;
+		var url= hash + '/' ;
         $.ajax({
 			url : url,
 			dataType : "html",
@@ -17,6 +17,10 @@
 			}
 		});
 	}
+//reload page on hashchange event – add support for old boys!
+window.onhashchange = function() {
+    window.location.reload();
+};
 
 	 
 	$("#loginbutton").on("click", function() {
