@@ -243,7 +243,11 @@ ul {
 }
 
 p {
-    line-height: 1.5em;
+    line-height: 1.6em;
+}
+
+ul {
+    line-height: 1.6em;
 }
 
 a {
@@ -262,6 +266,10 @@ a:hover {
 h2 {
     font-size: 1.5em;
     font-weight: 400;
+}
+
+.centered {
+    text-align: center;
 }
 
 .title-black {

@@ -6,7 +6,9 @@ url: ""
 collections:
   pages:
     output: true
-    permalink: /:title/   
+    permalink: /:title/ 
+  upload:
+    output: true
   projects:
     output: true
     permalink: /:collection/:name
