@@ -1,8 +1,14 @@
-**Duration** 1.5 hours
+**Duration**
+90 minutes
 
-Made in collaboration with Nancy Winship Milliken and Michael Zebrowski
+**Location**
+Vermont Arts Council
+Montpelier, Vermont
+
+**Made in collaboration with** Nancy Winship Milliken and Michael Zebrowski
 
 **Dancers** Holly Chagnon, Mireya Guerra, Sage Horsey, Mia Pinheiro, Lydia Kern, Navah Stein, and Elizabeth Marie Seyler instructing Tango during the rehearsal for scene two and performing in scene two.
 
-**Photographer** Renee Greenlee  
+**Photographer** Renee Greenlee
+
 **Video** Micah Dudash

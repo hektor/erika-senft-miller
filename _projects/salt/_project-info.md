@@ -1,12 +1,14 @@
-**Oct 9, 2016**
+**Date**
+Oct 9, 2016
 
+**Location**
 Vermont Railway Salt Shed  
 Burlington, Vermont
 
-**Duration:** 45 Minutes
+**Duration:**
+45 Minutes
 
-**Produced with** Craig Winslow, experiential design  
-Miles Dean, sound design
+**Produced with** Craig Winslow, experiential design and Miles Dean, sound design
 
 **Dancers** Holly Chagnon, Nicole Dagesse, Christine Holt, Sarah Macdonald, Mia Pinheiro, Elizabeth Marie Seyler, Jonathan Silverman, Liesje Smith, Avi Waring, Martha Whitfield, Michelle Winchell Struckholz, Lida Winfield
 
