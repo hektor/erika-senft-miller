@@ -17,9 +17,6 @@
 			}
 		});
 	}
-//reload page on hashchange event – add support for old boys!
-window.onhashchange = function() {
-    window.location.reload();
 };
 
 	 
