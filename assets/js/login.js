@@ -17,7 +17,6 @@
 			}
 		});
 	}
-};
 
 	 
 	$("#loginbutton").on("click", function() {
