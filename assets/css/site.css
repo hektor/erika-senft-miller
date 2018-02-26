@@ -547,7 +547,6 @@ table a {
 /* Project Grid */
 
 .gallery {
-    display: block;
     padding: 2.5vh;
     max-width: 1400px;
     margin: auto;
@@ -596,7 +595,6 @@ table a {
 }
 
 .item-image {
-    display: inline-block;
     background: #fff;
     margin: 0 0 1.5em;
     width: 100%;
