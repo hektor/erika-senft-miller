@@ -1,12 +1,15 @@
-**Preformances**
-
+**Date**
 - September 10, 2016 (*Between Land and Water*, performance)  
-- October 2016 (*Of Land and Local*, installation at Shelburne Farms)
+- September 29—October23, 2016 (*Of Land and Local*, installation)
+
+**Location**
+- Lake Champlain Sailing Center - Burlington, Vermont - performance
+- Shelburne Farms - Shelburne, Vermont - installation
 
 **Duration**  
-
 - 20 minutes
 - Two Performances
+
 
 **Collaborators** Choreography and performance by students in Clare Byrne's UVM Composition Class, directed by Ryan Kabilian & Mollie Morgan. Choreography by Roxanne Scully Christine Holt, Jill Lyons
 
