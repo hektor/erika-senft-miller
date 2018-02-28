@@ -438,6 +438,10 @@ table a {
     margin-bottom: 2.5vh;
 }
 
+.accordion-custom.open:hover {
+    color: black;
+}
+
 .accordion-custom i {
     float: right;
 }

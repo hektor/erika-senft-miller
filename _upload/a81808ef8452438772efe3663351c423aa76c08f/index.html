@@ -36,11 +36,24 @@ title: Upload
     </div>
 </div>
 
+<div class="row-xs">
+    <div class="row-inner">
+        <div class="accordion-custom open"><i class="fas fa-question"></i>Instructions for Uploading</div>
+            <div class="panel" style="display: block;">
+                <div class="col-6">
+                    {% capture instructions %}{% include_relative instructions.md %}{% endcapture %}
+                    {{ instructions | markdownify }}
+                </div>
+                <div class="col-6">       
+                    {% capture steps %}{% include_relative steps.md %}{% endcapture %}
+                    {{ steps | markdownify }}
+                </div>
+            </div>
+    </div>
+</div>
+
 <div class="row-small">
         <div class="row-inner">
-            <div class="col-8">
-                <p>The archive of work is much like the work itself is a multi-dimensional ongoing exercise in perspective. Through uploaded photos, shared texts or added video links these projects will continue to develop and evolve.</p>
-                <p> Contributions to this site are reviewed and published periodically, if you have questions please contact admin@erikasenftmiller.com</p>
-            </div>
+            
         </div>
     </div>
