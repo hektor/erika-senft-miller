@@ -9,7 +9,7 @@
 **Duration**  
 - 20 minutes
 - Two Performances
-
+- Second performance synced with sunset
 
 **Collaborators** Choreography and performance by students in Clare Byrne's UVM Composition Class, directed by Ryan Kabilian & Mollie Morgan. Choreography by Roxanne Scully Christine Holt, Jill Lyons
 

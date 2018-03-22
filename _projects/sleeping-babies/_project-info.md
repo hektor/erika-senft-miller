@@ -32,7 +32,7 @@ Installations: One-night viewing
 
 **Video** Micah Dudash  
 
-**Photography** Corey Hendrickson  
+**Photography** Dean Blotto Gray, Corey Hendrickson  
 
 **Bicycle & Food** Drew  
 
