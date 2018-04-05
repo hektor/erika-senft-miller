@@ -10,21 +10,35 @@ permalink: /info/
     </div>
 </div>
     
-<div class="row-medium gallery">
-    <div class="grid">
-        <div class="item-image" style="margin: 0 !important;"><img src="{{ site.baseurl }}assets/images/esm-info-1.jpg"></div>
-        <div class="item-image" style="margin: 0 !important;"><img src="{{ site.baseurl }}assets/images/esm-home.jpg"></div>
-        <div class="item-image" style="margin: 0 !important;"><img src="{{ site.baseurl }}assets/images/esm-home.jpg"></div>
+     <div class="row-medium gallery">
+         <div class="grid">
+             {% for image in site.static_files %}
+             {% if image.path contains 'erika-bio' %}
+             <div class="item-image">
+                 <img src="{{site.baseurl}}{{image.path}}">
+             </div>
+             {% endif %}
+             {% endfor %}            
+        </div>
     </div>
-</div>
 
     <div class="row-medium">
     <div class="row-inner">
-        <div class="col-12"><p>Including five languages; seventeen relocations; and twenty years teaching at universities, theaters, design studios, and other art and community centers; Miller’s life has been as dynamic and site-specific as her creative output. The boundary between her art and the rest of her life is something she has never considered to be a necessary distinction, always furthering the nuances of her creative process regardless of set and setting. In her words, “To work is to play; to play is to work.” Whether through her early ventures into advertising; training with Fe Reichelt; touring with the Panoptikum Movement Theater Company; passionately pursuing skiing and stand-up paddleboarding; or experimenting with new movement forms like parkour, bouldering, or surfing; she continues to absorb her environment and connect place, experience, and culture. All the while, her work and her life are guided and propelled by her strongly-held belief that if we engage in the process we constantly grow and change.</p><p>Recently, Miller has orchestrated a core group of collaborators that have formed her Movement Lab to work on a variety of projects including <a href="{{ site.baseurl }}projects/sitetime/">SiteTime</a>. The current members of the Movement Lab are: Holly Chagnon, Mireya Guerra, Sage Horsey, Lydia Kern, Alana Rancourt Phinney and Navah Stein. </p>
-
+        <div class="col-12"><p>Including five languages; seventeen relocations; and twenty years teaching at universities, theaters, design studios, and other art and community centers; Miller’s life has been as dynamic and site-specific as her creative output. The boundary between her art and the rest of her life is something she has never considered to be a necessary distinction, always furthering the nuances of her creative process regardless of set and setting. In her words, “To work is to play; to play is to work.” Whether through her early ventures into advertising; training in dance theater with Fe Reichelt; touring with the Panoptikum Movement Theater Company; passionately pursuing skiing and stand-up paddleboarding; or experimenting with new movement forms like parkour, bouldering, or surfing; she continues to absorb her environment and connect place, experience, and culture. All the while, her work and her life are guided and propelled by her strongly-held belief that if we engage in the process we constantly grow and change.</p><p>Recently, Miller has orchestrated a core group of collaborators that have formed her Movement Lab to work on a variety of projects including <a href="{{ site.baseurl }}projects/sitetime/">SiteTime</a>. The current members of the Movement Lab are: Holly Chagnon, Mireya Guerra, Sage Horsey, Lydia Kern, Alana Rancourt Phinney and Navah Stein. </p>
         </div>
     </div>
 </div>
+     <div class="row-medium gallery">
+         <div class="grid">
+             {% for image in site.static_files %}
+             {% if image.path contains 'movement-lab' %}
+             <div class="item-image">
+                 <img src="{{site.baseurl}}{{image.path}}">
+             </div>
+             {% endif %}
+             {% endfor %}            
+        </div>
+    </div>
 
 <div class="row-medium">
     <div class="row-inner">
