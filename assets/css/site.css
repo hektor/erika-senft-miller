@@ -411,9 +411,41 @@ table {
     border-collapse: collapse;
 }
 
+tr:last-child {
+    border-bottom: none;
+}
+
+
+
 tr {
-    height: 2.5em;
     border-bottom: 1px solid whitesmoke;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    height: 100%;
+    padding: 1em 0;
+    font-size: .8em;
+    line-height: 1.6em;
+    opacity: .4;
+}
+
+td {
+    width: 50%;
+    align-self: flex-start;
+}
+
+@media screen and (max-width: 640px) {
+    td {
+        width: 100% !important;
+    }
+    
+    td:first-child {
+        padding-bottom: 1.5em;
+    }
+    
+    tr {
+        flex-direction: column;
+    }
 }
 
 table a {
