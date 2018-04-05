@@ -10,8 +10,9 @@ permalink: /info/
     </div>
 </div>
     
-     <div class="row-small gallery">
-         <div class="grid">
+     <div class="row-small">
+         <div class="row-inner">
+         <div class="grid col-12">
              {% for image in site.static_files %}
              {% if image.path contains 'erika-bio' %}
              <div class="item-image">
@@ -20,6 +21,7 @@ permalink: /info/
              {% endif %}
              {% endfor %}            
         </div>
+             </div>
     </div>
 
     <div class="row-medium">
@@ -28,8 +30,9 @@ permalink: /info/
         </div>
     </div>
 </div>
-     <div class="row-medium gallery">
-         <div class="grid">
+     <div class="row-small">
+         <div class="row-inner">
+         <div class="grid col-12">
              {% for image in site.static_files %}
              {% if image.path contains 'movement-lab' %}
              <div class="item-image">
@@ -38,6 +41,8 @@ permalink: /info/
              {% endif %}
              {% endfor %}            
         </div>
+         <p>All images courtesy <a href="http://www.kayhlcooper.com/">Kayhl Cooper</a>.</p>
+             </div>
     </div>
 
 <div class="row-medium">
