@@ -33,7 +33,7 @@ task :migrate_data_to_templates do
       if sheet == "photo"
 
         unless blob["image"] && blob["name"]  && blob["project"]
-          puts "Invalid Photo submission!: "
+          puts "Invalid Photo submission!: "                
           puts "  skippping #{blob.inspect}"
           next 
         end
