@@ -16,7 +16,7 @@ permalink: /info/
              {% for image in site.static_files %}
              {% if image.path contains 'erika-bio' %}
              <div class="item-image">
-                 <img src="{{site.baseurl}}{{image.path}}">
+                 <img src="{{image.path}}">
              </div>
              {% endif %}
              {% endfor %}            
@@ -36,7 +36,7 @@ permalink: /info/
              {% for image in site.static_files %}
              {% if image.path contains 'movement-lab' %}
              <div class="item-image">
-                 <img src="{{site.baseurl}}{{image.path}}">
+                 <img src="{{image.path}}">
              </div>
              {% endif %}
              {% endfor %}            
