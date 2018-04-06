@@ -606,6 +606,10 @@ table a {
     height: auto; 
 } 
 
+.vp-player-layout {
+    top: 0 !important;
+}
+
 .item-video iframe, .item-video object, .item-video embed { 
     position: absolute; 
     top: 0; 
@@ -639,7 +643,7 @@ table a {
     -webkit-box-sizing: border-box;
 }
 
-/* Projects-Mobile */
+/* Grids */
 
 
 @media only screen and (min-width: 640px) {
@@ -668,6 +672,29 @@ table a {
 
 @media only screen and (min-width: 1280px) {
     .grid {
+        width: 100%;
+    }
+}
+
+
+@media only screen and (min-width: 640px) {
+    .grid-2-col {
+        -moz-column-count: 1;
+        -webkit-column-count: 1;
+        column-count: 1;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .grid-2-col {
+        -moz-column-count: 2;
+        -webkit-column-count: 2;
+        column-count: 2;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .grid-2-col {
         width: 100%;
     }
 }
