@@ -12,10 +12,10 @@ permalink: /info/
     
      <div class="row-small">
          <div class="row-inner">
-         <div class="grid-2-col col-12">
+         <div class="grid-col-2">
              {% for image in site.static_files %}
              {% if image.path contains 'erika-bio' %}
-             <div class="item-image">
+             <div class="item-image-row">
                  <img src="{{image.path}}">
              </div>
              {% endif %}
@@ -32,7 +32,7 @@ permalink: /info/
 </div>
      <div class="row-small">
          <div class="row-inner">
-         <div class="grid col-12">
+         <div class="grid">
              {% for image in site.static_files %}
              {% if image.path contains 'movement-lab' %}
              <div class="item-image">
