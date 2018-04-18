@@ -474,7 +474,8 @@ table a {
     color: black;
 }
 
-.accordion-custom i {
+.accordion-custom svg {
+    margin-right: .75em;
     float: right;
 }
 
