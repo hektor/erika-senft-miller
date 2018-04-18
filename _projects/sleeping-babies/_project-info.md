@@ -10,7 +10,7 @@ Maven Skateshop, (*Baby Monitors at Maven* installation)
 Burlington, Vermont
 
 **Duration**
-Performance: 40 minutes
+Performance: 40 minutes,
 Installations: One-night viewing
 
 **Creative Team** Erika Senft Miller, Clark Derbes, Matt LaRocca, Michael Jager

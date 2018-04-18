@@ -11,9 +11,9 @@
 - Two Performances
 - Second performance synced with sunset
 
-**Collaborators** Choreography and performance by students in Clare Byrne's UVM Composition Class, directed by Ryan Kabilian & Mollie Morgan. Choreography by Roxanne Scully Christine Holt, Jill Lyons
+**Collaborators** Choreography and performance by students in Clare Byrne's UVM Composition Class, directed by Ryan Kabilian & Mollie Morgan. Choreography by Roxanne Scully, Christine Holt, Jill Lyons
 
-**Dancers** Angela Arsenault, Coulter Cluett, Sarah Macdonald, Olivia Malone, Mia Pinheiro, Elizabeth Marie Seyler, Liesje Smith, Blair Bean, Mia Fishkin, Sage Horsey, Ruby LaBrusciano-Carris, Ryan Kabilian, Mollie Morgan, Emily Velush, Hanna Satterlee, Otto Pierce, Dancers on Boat Ramp, Holly Chagnon, Nicole Dagesse, Martha Whitfield, Sara McMahon, Erika Senft Miller, Marly Spieser-Schneider, Lida Winfield, Secchi Disk — Water Research, Heather Fitzgerald, Jonathan Silverman, Shanley Hinge, Shannon Lipkin, Karen Spach, Carey Strobeck, Lindsay Tompkins, Roxanne Scully, Helaina Stergas, Elzy Wick, Scott Luria, John H Miller, Ellen Bernstein
+**Dancers** Angela Arsenault, Coulter Cluett, Sarah Macdonald, Olivia Malone, Mia Pinheiro, Elizabeth Marie Seyler, Liesje Smith, Blair Bean, Mia Fishkin, Sage Horsey, Ruby LaBrusciano-Carris, Ryan Kabilian, Mollie Morgan, Emily Velush, Hanna Satterlee, Otto Pierce, Holly Chagnon, Nicole Dagesse, Martha Whitfield, Sara McMahon, Erika Senft Miller, Marly Spieser-Schneider, Lida Winfield, Heather Fitzgerald, Jonathan Silverman, Shanley Hinge, Shannon Lipkin, Karen Spach, Carey Strobeck, Lindsay Tompkins, Roxanne Scully, Helaina Stergas, Elzy Wick, Scott Luria, John H Miller, Ellen Bernstein
 
 **Dancers from Burlington Movement for Parkinson's class**, Directed by Sara McMahon: Bea, Ron, Gary, Darlene, Sue, Sue, Annabelle, Carl, Sarah, Jim, Pete, Francie, Tracy (assisting)
 
