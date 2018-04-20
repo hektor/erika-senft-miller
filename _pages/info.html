@@ -4,86 +4,88 @@ title: Info
 permalink: /info/
 ---
 <div class="row">
-<div class="row-medium">
-    <div class="row-inner">
-        <div class="title-black">Erika Senft Miller is a conceptual performance artist actively exploring and embracing the power of movement through rigorous academic research, a careful pattern of creative productivity, and in-depth multimedia integration and documentation of her work.</div>  
-    </div>
-</div>
-    
-     <div class="row-small">
-         <div class="row-inner">
-         <div class="grid-col-2">
-             {% for image in site.static_files %}
-             {% if image.path contains 'erika-bio' %}
-             <div class="item-image-row">
-                 <img src="{{image.path}}">
-             </div>
-             {% endif %}
-             {% endfor %}            
+    <div class="row-medium">
+        <div class="row-inner">
+            <div class="title-black">Erika Senft Miller is a conceptual performance artist actively exploring and embracing the power of movement through rigorous academic research, a careful pattern of creative productivity, and in-depth multimedia integration and documentation of her work.</div>
         </div>
-             </div>
+    </div>
+
+    <div class="row-small">
+        <div class="row-inner">
+            <div class="grid-col-2">
+                {% for image in site.static_files %} {% if image.path contains 'erika-bio' %}
+                <div class="item-image-row">
+                    <img src="{{image.path}}">
+                </div>
+                {% endif %} {% endfor %}
+            </div>
+        </div>
     </div>
 
     <div class="row-medium">
-    <div class="row-inner">
-        <div class="col-12"><p>Including five languages; seventeen relocations; and twenty years teaching at universities, theaters, design studios, and other art and community centers; Miller’s life has been as dynamic and site-specific as her creative output. The boundary between her art and the rest of her life is something she has never considered to be a necessary distinction, always furthering the nuances of her creative process regardless of set and setting. In her words, “To work is to play; to play is to work.” Whether through her early ventures into advertising; training in dance theater with Fe Reichelt; touring with the Panoptikum Movement Theater Company; passionately pursuing skiing and stand-up paddleboarding; or experimenting with new movement forms like parkour, bouldering, or surfing; she continues to absorb her environment and connect place, experience, and culture. All the while, her work and her life are guided and propelled by her strongly-held belief that if we engage in the process we constantly grow and change.</p><p>Recently, Miller has orchestrated a core group of collaborators that have formed her Movement Lab to work on a variety of projects including <a href="{{ site.baseurl }}projects/sitetime/">SiteTime</a>. The current members of the Movement Lab are: Holly Chagnon, Mireya Guerra, Sage Horsey, Lydia Kern, Alana Rancourt Phinney and Navah Stein. </p>
+        <div class="row-inner">
+            <div class="col-12">
+                <p>Including five languages; seventeen relocations; and twenty years teaching at universities, theaters, design studios, and other art and community centers; Miller’s life has been as dynamic and site-specific as her creative output. The boundary between her art and the rest of her life is something she has never considered to be a necessary distinction, always furthering the nuances of her creative process regardless of set and setting. In her words, “To work is to play; to play is to work.” Whether through her early ventures into advertising; training in dance theater with Fe Reichelt; touring with the Panoptikum Movement Theater Company; passionately pursuing skiing and stand-up paddleboarding; or experimenting with new movement forms like parkour, bouldering, or surfing; she continues to absorb her environment and connect place, experience, and culture. All the while, her work and her life are guided and propelled by her strongly-held belief that if we engage in the process we constantly grow and change.</p>
+                <p>Recently, Miller has orchestrated a core group of collaborators that have formed her <a href="https://www.instagram.com/erikamillerlab">Performance Lab</a> to work on a variety of projects including <a href="{{ site.baseurl }}projects/sitetime/">SiteTime</a>. The current members of the Performance Lab are: Holly Chagnon, Mireya Guerra, Sage Horsey, Lydia Kern, Alana Rancourt Phinney and Navah Stein. </p>
+            </div>
         </div>
     </div>
-</div>
-     <div class="row-small">
-         <div class="row-inner">
-         <div class="grid">
-             {% for image in site.static_files %}
-             {% if image.path contains 'movement-lab' %}
-             <div class="item-image">
-                 <img src="{{image.path}}">
-             </div>
-             {% endif %}
-             {% endfor %}            
+    <div class="row-small">
+        <div class="row-inner">
+            <div class="grid">
+                {% for image in site.static_files %} {% if image.path contains 'movement-lab' %}
+                <div class="item-image">
+                    <img src="{{image.path}}">
+                </div>
+                {% endif %} {% endfor %}
+            </div>
+            <p>All images courtesy <a href="http://www.kayhlcooper.com/" target="_blank">Kayhl Cooper</a>.</p>
         </div>
-         <p>All images courtesy <a href="http://www.kayhlcooper.com/" target="_blank">Kayhl Cooper</a>.</p>
-             </div>
     </div>
 
-<div class="row-medium">
-    <div class="row-inner">
-        <div class="col-3">
-            <p><strong>Contact</strong></p>
-            <ul class="press">
-                <li>hello@erikasenftmiller.com</li>
-                <li><a href="{{ site.baseurl }}assets/erikasenftmiller-cv.pdf" class="blue" target="_blank">Download CV</a></li>
-            </ul>   
-        </div>
-        <div class="col-9">
-            <p><strong>Media Links</strong></p>
+    <div class="row-medium">
+        <div class="row-inner">
+            <div class="col-3">
+                <p><strong>Contact</strong></p>
                 <ul class="press">
-                    {% assign items = site.press | sort: 'order' %}
-                        {% assign link = items | reverse %}
-                            {% for link in items %}
-                                <li><a href="{{ project.link }}">{{ link.title }} / {{ link.publication }}</a></li>  
+                    <li>hello@erikasenftmiller.com</li>
+                    <li><a href="{{ site.baseurl }}assets/erikasenftmiller-cv.pdf" class="blue" target="_blank">Download CV</a></li>
+                </ul>
+            </div>
+            <div class="col-9">
+                <p><strong>Media Links</strong></p>
+                <ul class="press">
+                    {% assign items = site.press %} 
+                    {% assign link = items | reverse %} 
+                    {% for link in items %}
+                    <li><a href="{{ link.source }}" target="_blank">{{ link.title }} / {{ link.publication }}</a></li>
                     {% endfor %}
-                </ul> 
-        </div>
-    </div>        
-</div>
-
-    
-
-<div class="row-small">
-    <div class="row-inner">
-        <div class="col-3">
-            <a href="https://medium.com/@erikasenftmiller/" target="_blank" class="social">
-                <i class="fab fa-medium"></i>Medium</a>
-        </div>
-        <div class="col-3">
-            <a href="https://www.instagram.com/erikasenftm/" target="_blank" class="social">
-                <i class="fab fa-instagram"></i>Instagram</a>
-        </div>
-        <div class="col-3">
-            <a href="https://vimeo.com/erikasenftmiller/" target="_blank" class="social">
-                <i class="fab fa-vimeo"></i>Vimeo</a>
+                </ul>
+            </div>
         </div>
     </div>
-</div>    
-    
+
+
+
+    <div class="row-small">
+        <div class="row-inner">
+            <div class="col-3">
+                <a href="https://medium.com/@erikasenftmiller/" target="_blank" class="social">
+                <i class="fab fa-medium"></i>Medium</a>
+            </div>
+            <div class="col-3">
+                <a href="https://www.instagram.com/erikasenftm/" target="_blank" class="social">
+                <i class="fab fa-instagram"></i>Instagram</a>
+            </div>
+            <div class="col-3">
+                <a href="https://vimeo.com/erikasenftmiller/" target="_blank" class="social">
+                <i class="fab fa-vimeo"></i>Vimeo</a>
+            </div>
+            <div class="col-3">
+                <a href="https://www.instagram.com/erikamillerlab" target="_blank" class="social">
+                <i class="fab fa-instagram"></i>Preformance Lab</a>
+            </div>
+        </div>
+    </div>
+
 </div>
