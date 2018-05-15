@@ -517,6 +517,7 @@ table a {
 
 .acc-static {
     font-size: 18px;
+    pointer-events: none;
 }
 
 .acc-static:after {
