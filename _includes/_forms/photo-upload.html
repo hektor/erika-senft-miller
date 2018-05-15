@@ -2,24 +2,25 @@
 
     <div class="form-group">
         <label>Note: Files must be smaller than 1mb.</label><br><br>
-        <input type="file" name="image" id="file" class="inputfile" required /><br>   
+        <input type="file" name="image" id="file" class="inputfile" required /><br>
     </div>
-    
+
     <div class="form-group">
         <input type="text" name="name" placeholder="Image Credit" class="form-control" required />
     </div>
-   
-    {% assign items = site.projects | sort: 'order' %}
-        {% assign projects = items | reverse %}
-            {% for project in items %}
-            <div class="project"><input type="radio" name="project" value="{{ project.value }}" required>
-                <label for="project">{{ project.title }}</label>
-            </div>
-        {% endfor %}
+
+    {% assign items = site.projects | sort: 'order' %} {% assign projects = items | reverse %} {% for project in items %}
     
+    <div class="project"><input type="radio" name="project" value="{{ project.value }}" required>
+        <label for="project">{{ project.title }}</label>
+    </div>
+    
+    {% endfor %}
+
     <div class="form-group">
         <button type="submit">Submit</button>
     </div>
-    <input type="hidden" name="_redirect" value="https://erikasenftmiller.com/confirmation/" />
+    
+    <input type="hidden" name="_redirect" value="https://erikasenftmiller.com/confirmation/"/>
+    
 </form>
-
