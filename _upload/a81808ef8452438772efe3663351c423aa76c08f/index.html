@@ -11,7 +11,7 @@ title: Upload
 
 <div class="row-xs">
     <div class="row-inner">
-        <div class="accordion-custom"><i class="fas fa-camera"></i>Upload a Photo</div>
+        <div class="accordion acc-upload"><i class="fas fa-camera"></i>Upload a Photo</div>
             <div class="panel">
                 {% include _forms/photo-upload.html %}
             </div> 
@@ -20,7 +20,7 @@ title: Upload
 
 <div class="row-xs">
     <div class="row-inner">
-        <div class="accordion-custom"><i class="fab fa-vimeo"></i>Embed from Vimeo</div>
+        <div class="accordion acc-upload"><i class="fab fa-vimeo"></i>Embed from Vimeo</div>
             <div class="panel">
                 {% include _forms/video-embed.html %}
             </div>
@@ -29,7 +29,7 @@ title: Upload
 
 <div class="row-xs">
     <div class="row-inner">
-        <div class="accordion-custom"><i class="fas fa-align-left"></i>Add Text</div>
+        <div class="accordion acc-upload"><i class="fas fa-align-left"></i>Add Text</div>
             <div class="panel">
                 {% include _forms/add-text.html %}
             </div>
@@ -38,7 +38,7 @@ title: Upload
 
 <div class="row-xs">
     <div class="row-inner">
-        <div class="accordion-custom open"><i class="fas fa-question"></i>Instructions for Uploading</div>
+        <div class="accordion acc-upload open"><i class="fas fa-question"></i>Instructions for Uploading</div>
             <div class="panel" style="display: block;">
                 <div class="col-6">
                     {% capture instructions %}{% include_relative instructions.md %}{% endcapture %}

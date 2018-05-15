@@ -1,0 +1,57 @@
+.footer {
+    display: none !important;
+}
+
+.hidden {
+    display: none;
+}
+
+.question {
+    font-weight: normal;
+}
+
+.prompt {
+    font-size: 3em;
+    margin-bottom: 1em;
+}
+
+#input {
+    padding: 3em;
+    height: 100vh;
+}
+
+textarea {
+    min-width: 100%;
+    font-size: 6em;
+    font-weight: normal;
+    padding: .25em;    
+    color: black;    
+    border: 1px solid lightgrey;
+    display: block;
+    min-height: 75vh;
+    -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+::-webkit-input-placeholder {
+    color: black;
+    opacity: .1;
+}
+
+:-moz-placeholder {
+    /* Firefox 18- */
+    color: black;
+    opacity: .1;
+}
+
+::-moz-placeholder {
+    /* Firefox 19+ */
+    color: black;
+    opacity: .1;
+}
+
+:-ms-input-placeholder {
+    color: black;
+    opacity: .1;
+}

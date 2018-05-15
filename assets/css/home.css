@@ -36,6 +36,10 @@ body {
     background-color: black;
 }
 
+.footer {
+    display: none !important;
+}
+
 .vidcover {
     opacity: 0.2;
     background: black;
