@@ -1,3 +1,3 @@
 *Output / Input* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus lorem enim, quis egestas ligula finibus non. Ut sit amet vehicula lacus. Nulla vitae enim luctus nunc pulvinar malesuada. Mauris non molestie nulla. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse potenti. Proin dignissim efficitur eros in vulputate. Integer at ullamcorper nibh. Quisque sagittis ullamcorper tellus, et semper est. Nulla ac magna venenatis, maximus erat eget, aliquam nisi. Etiam tincidunt volutpat viverra.
 
-**Note:** This is what will be on view in the gallery: View the project [here](/input/).
+**Note:** This is page is NOT what will be on view in the gallery: View page for the installation [here](/input/).
