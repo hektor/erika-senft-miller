@@ -4,27 +4,21 @@ title: Input
 permalink: /input/
 ---
 
-<div id="input">
-    <div class="container row">
-        <div class="prompt col-12">
-            Question:
-            <div class="question"></div>
-        </div>
 
-        <form name="contact" netlify-honeypot="bot-field" method="POST" action="/input/" netlify>
 
-            <p class="hidden"><label>Don’t fill this out if you're human: <input name="bot-field"></label></p>
 
-            <textarea autofocus="" required name="message" id="commentarea" class="commentarea" placeholder="Input"></textarea>
+<form name="output-input" netlify-honeypot="bot-field" method="POST" action="/input/" netlify>
+    
+    <label for="commentarea">Question:<div class="question"></div></label>
+    
+    <textarea autofocus="" required name="message" id="commentarea" class="commentarea" placeholder="Input"></textarea>
 
-        </form>
+</form>
 
-    </div>
-            <div class="col-6">
-            <p>Choose a card. Respond. Add your output. Press <b>'Input'</b> to submit your output.</p>
-        </div>
+<!--
 
-        <div class="col-6">
-            <p>Responses will be published daily at <b>erikasenftmiller.com</b>
-        </div>
-</div>
+<p class="hidden">
+<label>Don’t fill this out if you're human: 
+<input name="bot-field"></label></p> 
+
+-->

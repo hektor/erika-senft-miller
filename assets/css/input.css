@@ -1,38 +1,46 @@
-.footer {
-    display: none !important;
-}
-
 .hidden {
     display: none;
 }
 
-.question {
-    font-weight: normal;
+.footer {
+    display: none !important;
 }
 
-.prompt {
-    font-size: 3em;
+form {
+    height: 100vh;
+    padding: 2em;
+}
+
+.question {
     margin-bottom: 1em;
 }
 
-#input {
-    padding: 3em;
-    height: 100vh;
+label {
+    font-size: 2em;
+    margin-bottom: 1em;
 }
 
 textarea {
-    min-width: 100%;
+    width: 100%;
     font-size: 6em;
     font-weight: normal;
-    padding: .25em;    
-    color: black;    
-    border: 1px solid lightgrey;
+    padding: 0;
+    color: black;
+    border: none;
     display: block;
-    min-height: 75vh;
     -webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    resize: none;
+    height: 75vh;
+    caret-color: blue;
 }
+
+input:focus, textarea:focus, select:focus {
+    outline-offset: none !important;
+    border: none;
+}
+
 
 ::-webkit-input-placeholder {
     color: black;

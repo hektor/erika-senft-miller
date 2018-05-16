@@ -6,7 +6,8 @@ $(window).on('load', function () {
     $('body').delay(2250).css({
         'overflow': 'visible'
     });
-})
+});
+
 
 // input — generate random word
 
@@ -33,6 +34,7 @@ $(function () {
     $('.question').html(getRandomQuestion());
 });
 
+
 // input — submit on enter
 
 $(document).ready(function () {
@@ -44,13 +46,15 @@ $(document).ready(function () {
     });
 });
 
+
 // input — disable tab key
 
 $(document).keydown(function (objEvent) {
     if (objEvent.keyCode == 9) { //tab pressed
         objEvent.preventDefault(); // stops its action
     }
-})
+});
+
 
 // accordion
 
