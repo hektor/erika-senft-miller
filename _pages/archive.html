@@ -7,7 +7,7 @@ permalink: /archive/
 <div class="row">
 
     <div class="row-inner">
-        <p>Ongoing</p>
+        <p>Current</p>
 
         {% assign items = site.ongoing | sort: 'order' %} {% assign ongoing = items %} {% for ongoing in items %}
         <div class="title-black">
@@ -17,7 +17,7 @@ permalink: /archive/
     </div>
 
         <div class="row-inner">
-            <p>Previous</p>
+            <p>Past</p>
 
             {% assign items = site.projects | sort: 'order' %} {% assign projects = items %} {% for project in items reversed %}
             <div class="title-black">
