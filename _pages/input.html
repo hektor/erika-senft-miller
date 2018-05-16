@@ -5,7 +5,20 @@ permalink: /input/
 ---
 
 
+<form method="POST" action="//api.cloudstitch.com/alderstudio/esm-data/text">
+    <label for="commentarea">Question:<div class="question"></div></label>
+    
+    <textarea type="text" autofocus="" value="output-input" name="message" id="commentarea" class="commentarea" placeholder="Input" required></textarea>
+    
+    <input type="hidden" name="_redirect" value="https://staging.erikasenftmiller.com/input/" />
+    
+</form>
 
+
+
+
+
+<!--
 
 <form name="output-input" netlify-honeypot="bot-field" method="POST" action="/input/" netlify>
     
@@ -15,7 +28,6 @@ permalink: /input/
 
 </form>
 
-<!--
 
 <p class="hidden">
 <label>Don’t fill this out if you're human: 
