@@ -6,9 +6,11 @@ permalink: /input/
 
 
 <form method="POST" action="//api.cloudstitch.com/alderstudio/esm-data/text">
+    <div class="form-group">
     <label for="commentarea">Question:<div class="question"></div></label>
     
-    <textarea type="text" autofocus="" value="output-input" name="message" id="commentarea" class="commentarea" placeholder="Input" required></textarea>
+    <textarea name="text" autofocus="" id="commentarea" class="commentarea" placeholder="Type to input..." required></textarea>
+    </div>
     
     <input type="hidden" name="_redirect" value="https://staging.erikasenftmiller.com/input/" />
     

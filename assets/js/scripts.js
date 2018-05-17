@@ -8,7 +8,6 @@ $(window).on('load', function () {
     });
 });
 
-
 // input — generate random word
 
 var questions = [
