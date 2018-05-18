@@ -91,7 +91,7 @@ task :migrate_data_to_templates do
 
         items[project_name] << ('<div class="item-video"><iframe src="https://player.vimeo.com/video/'+ Sanitize.fragment(blob["videoid"]) + '" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>')
       elsif sheet == "text"
-        unless blob["text"] && blob["name"]  && blob["project"]
+        unless blob["text"] && blob["project"]
           puts "Invalid text submission!: "
           puts "  skippping #{blob.inspect}"
           next 

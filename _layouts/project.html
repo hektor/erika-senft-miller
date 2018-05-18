@@ -3,62 +3,47 @@ layout: default
 ---
 
 <div class="row-medium">
-  <div class="row-inner">
-    <div class="banner-title">{{ page.title }}</div>
-    <div class="banner-excerpt">
-      {{ page.time }} / {{ page.site }} / {{ page.location }}
-    </div>
-  </div>
-</div>
-
-<div class="row-xs">
-<<<<<<< HEAD
-  <div class="row-inner">
-    <div class="accordion open">Description</div>
-    <div class="panel" style="display: block;">
-      {% capture project-description %}{% include_relative _project-description.md %}{% endcapture %} {{ project-description | markdownify }}
-=======
     <div class="row-inner">
-        <div class="accordion acc-project open">Description</div>
-            <div class="panel" style="display: block;">
-                {% capture project-description %}{% include_relative _project-description.md %}{% endcapture %}
-                {{ project-description | markdownify }}
-            </div> 
->>>>>>> app
+        <div class="banner-title">{{ page.title }}</div>
+        <div class="banner-excerpt">
+            {{ page.time }} / {{ page.site }} / {{ page.location }}
+        </div>
     </div>
-  </div>
 </div>
 
 <div class="row-xs">
-<<<<<<< HEAD
-  <div class="row-inner">
-    <div class="accordion">Details</div>
-    <div class="panel">
-      {% capture project-info %}{% include_relative _project-info.md %}{% endcapture %} {{ project-info | markdownify }}
-=======
+
     <div class="row-inner">
-        <div class="accordion acc-project">Details</div>
-            <div class="panel">
-            {% capture project-info %}{% include_relative _project-info.md %}{% endcapture %}
-            {{ project-info | markdownify }}
-            </div>
->>>>>>> app
+        <div class="accordion open">Description</div>
+        <div class="panel" style="display: block;">
+            {% capture project-description %}{% include_relative _project-description.md %}{% endcapture %} {{ project-description | markdownify }}
+        </div>
     </div>
-  </div>
 </div>
 
 <div class="row-xs">
-  <div id="filters">
-    <div class="label">Perspectives</div>
-    <div class="triggers">
-      <div class="tablinks" onclick="openCity(event, 'collaborators')" id="defaultOpen">Collaborators</div> /
-      <div class="tablinks" onclick="openCity(event, 'audience')">Audience</div>
+
+    <div class="row-inner">
+        <div class="accordion">Details</div>
+        <div class="panel">
+            {% capture project-info %}{% include_relative _project-info.md %}{% endcapture %} {{ project-info | markdownify }}
+
+        </div>
     </div>
-  </div>
+</div>
+
+<div class="row-xs">
+    <div id="filters">
+        <div class="label">Perspectives</div>
+        <div class="triggers">
+            <div class="tablinks" onclick="openCity(event, 'collaborators')" id="defaultOpen">Collaborators</div> /
+            <div class="tablinks" onclick="openCity(event, 'audience')">Audience</div>
+        </div>
+    </div>
 </div>
 
 <div class="row-medium">
-  <div class="gallery">
-    {{ content }}
-  </div>
+    <div class="gallery">
+        {{ content }}
+    </div>
 </div>
