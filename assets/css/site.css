@@ -1,23 +1,4 @@
-#input-circle {
-    position: fixed;
-    bottom: 1em;
-    right: 1em;
-    height: 150px;
-    width: 150px;
-    background-color: blue;
-    color: white;
-    border-radius: 150px;
-    text-align: center;
-    
-}
 
-.input-circle {
-  padding: 40% 0;
-}
-
-#input-circle p {
-    text-align: center;
-}
 
 /* Mobile */
 
