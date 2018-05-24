@@ -46,10 +46,16 @@ $(document).ready(function () {
 });
 
 
-// input — disable tab key
+// input — disable tab and escape key
 
 $(document).keydown(function (objEvent) {
     if (objEvent.keyCode == 9) { //tab pressed
+        objEvent.preventDefault(); // stops its action
+    }
+});
+
+$(document).keydown(function (objEvent) {
+    if (objEvent.keyCode == 27) { //escape pressed
         objEvent.preventDefault(); // stops its action
     }
 });

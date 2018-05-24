@@ -11,6 +11,13 @@ form {
     padding: 2em;
 }
 
+.input-form-group {
+    display: block;
+    margin-bottom: 20px;
+    margin-top: 3em;
+    text-align: center !important;
+}
+
 .question {
     margin-bottom: 1em;
 }
@@ -63,4 +70,13 @@ input:focus, textarea:focus, select:focus {
 :-ms-input-placeholder {
     color: black;
     opacity: .1;
+}
+
+input {
+  color: transparent;
+  text-shadow: 0 0 0 #2196f3;
+
+  &:focus {
+      outline: none;
+  }
 }

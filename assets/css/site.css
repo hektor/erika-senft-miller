@@ -320,11 +320,6 @@ h2 {
 
 /*Form*/
 
-.input-form-group {
-    display: block;
-    margin-bottom: 20px;
-    text-align: center !important;
-}
 
 #form {
     border-top: 1px solid whitesmoke;
