@@ -6,7 +6,6 @@
         <input type="text" name="videoid" placeholder="Vimeo ID {the numbers at the end of the url)." class="form-control" required />
     </div>
 
-    {% assign items = site.projects | sort: 'order' %} {% assign projects = items | reverse %} {% for project in items %}
 
    
     {% assign items = site.projects | sort: 'order' %}
@@ -17,11 +16,7 @@
             </div>
         {% endfor %}
     
-    <div class="project"><input type="radio" name="project" value="{{ project.value }}" required>
-        <label for="project">{{ project.title }}</label>
-    </div>
-    
-    {% endfor %}
+
 
     <div class="form-group">
         <button type="submit">Submit</button>
