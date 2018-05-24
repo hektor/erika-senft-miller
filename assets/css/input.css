@@ -23,9 +23,9 @@ label {
 textarea {
     width: 100%;
     font-size: 6em;
-    font-weight: normal;
+    font-weight: 400;
     padding: 0;
-    color: black;
+    color: #000;
     border: none;
     display: block;
     -webkit-box-sizing: border-box;
@@ -33,7 +33,8 @@ textarea {
     box-sizing: border-box;
     resize: none;
     height: 75vh;
-    caret-color: blue;
+    caret-color: transparent;
+    text-align: center;
 }
 
 input:focus, textarea:focus, select:focus {
