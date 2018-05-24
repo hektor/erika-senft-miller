@@ -1,3 +1,5 @@
+
+
 /* Mobile */
 
 @media only screen and (max-width: 640px) {
@@ -318,6 +320,7 @@ h2 {
 
 /*Form*/
 
+
 #form {
     border-top: 1px solid whitesmoke;
     border-bottom: 1px solid whitesmoke;
@@ -462,59 +465,69 @@ table a {
     color: blue;
 }
 
-.accordion-custom {
-    cursor: pointer;
-    width: 100%;
-    max-width: 1400px;
-    margin: auto;
-    text-align: left;
-    font-size: 24px;
-}
-
-.accordion-custom:hover {
-    color: blue;
-}
-
-.accordion-custom.open {
-    color: blue;
-    margin-bottom: 2.5vh;
-}
-
-.accordion-custom.open:hover {
-    color: black;
-}
-
-.accordion-custom svg {
-    float: right;
-}
-
 .accordion {
     cursor: pointer;
     width: 100%;
     max-width: 1400px;
     margin: auto;
     text-align: left;
+}
+
+.acc-project {
     font-size: 18px;
 }
 
-.accordion:after {
+.acc-project:after {
     font-family: FontAwesome;
     content: '\f067';
     float: right;
 }
 
-.accordion:hover {
+.acc-project:hover {
     color: blue;
 }
 
-.accordion.open {
+.acc-project.open {
     color: blue;
     margin-bottom: 2.5vh;
 }
 
-.accordion.open:after {
-    font-family: FontAwesome;
+.acc-project.open:after {
+    font-family: 'FontAwesome';
     content: '\f068';
+}
+
+.acc-upload {
+    font-size: 24px;
+}
+
+.acc-upload:hover {
+    color: blue;
+}
+
+.acc-upload.open {
+    color: blue;
+    margin-bottom: 2.5vh;
+}
+
+.acc-upload.open:hover {
+    color: black;
+}
+
+.acc-upload svg {
+    float: right;
+}
+
+.acc-static {
+    font-size: 18px;
+    pointer-events: none;
+    color: blue;
+}
+
+.acc-static:after {
+    font-family: 'FontAwesome';
+    content: '\f078';
+    float: right;
 }
 
 

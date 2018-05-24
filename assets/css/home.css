@@ -1,3 +1,30 @@
+#input-circle {
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+    height: 150px;
+    width: 150px;
+    background-color: blue;
+    color: white;
+    border-radius: 150px;
+    text-align: center;
+    transition: all .2s ease-in-out;
+}
+
+.input-circle {
+  padding: 40% 0;
+}
+
+#input-circle p {
+    text-align: center;
+}
+
+
+#input-circle:hover {
+  transform: scale(.85);
+}
+
+
 /* Preloader */
 
 #preloader {
@@ -36,6 +63,10 @@ body {
     background-color: black;
 }
 
+.footer {
+    display: none !important;
+}
+
 .vidcover {
     opacity: 0.2;
     background: black;
@@ -69,7 +100,7 @@ body {
     font-size: 28px;
 }
 
-.home-link {
+.home-link a {
     font-size: 28px;
     color: white;
     display: inline-block;
@@ -78,7 +109,7 @@ body {
     opacity: .4;
 }
 
-.home-link:hover {
+.home-link a:hover {
     color: white;
     opacity: 1;
 }

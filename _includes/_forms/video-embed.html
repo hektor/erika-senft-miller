@@ -7,6 +7,15 @@
     </div>
 
     {% assign items = site.projects | sort: 'order' %} {% assign projects = items | reverse %} {% for project in items %}
+
+   
+    {% assign items = site.projects | sort: 'order' %}
+        {% assign projects = items | reverse %}
+            {% for project in items %}
+            <div class="project"><input type="radio" name="project" value="{{ project.value }}" required>
+                <label for="project">{{ project.title }}</label>
+            </div>
+        {% endfor %}
     
     <div class="project"><input type="radio" name="project" value="{{ project.value }}" required>
         <label for="project">{{ project.title }}</label>
