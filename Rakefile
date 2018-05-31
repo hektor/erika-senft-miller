@@ -99,8 +99,6 @@ task :migrate_data_to_templates do
         # TODO (do we want to credit commentors)
         items[project_name] << ('<div class="item-text"><p>' +
                                 Sanitize.fragment(blob["text"]) + 
-                                '</p><p>' + 
-                                Sanitize.fragment(blob["name"]) + 
                                 '</p></div>')
       end
     end
