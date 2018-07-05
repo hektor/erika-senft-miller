@@ -1,4 +1,28 @@
+#input-circle {
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+    height: 150px;
+    width: 150px;
+    background-color: blue;
+    color: white;
+    border-radius: 150px;
+    text-align: center;
+    transition: all .2s ease-in-out;
+}
 
+.input-circle {
+  padding: 40% 0;
+}
+
+#input-circle p {
+    text-align: center;
+}
+
+
+#input-circle:hover {
+  transform: scale(.85);
+}
 
 /* Mobile */
 
@@ -305,7 +329,7 @@ h2 {
 
 .social {
     display: inline-block;
-    color: blue;
+    color: black;
     margin: 1vh 0;
     font-size: 18px;
 }
@@ -315,11 +339,18 @@ h2 {
 }
 
 .social:hover {
-    color: black;
+    color: blue;
 }
 
 /*Form*/
 
+#newsletter-signup {
+
+}
+
+#newsletter-signup button {
+    margin: 0; 
+}
 
 #form {
     border-top: 1px solid whitesmoke;
@@ -374,8 +405,8 @@ button {
   border: 1px solid blue;
   background-color: white;
   color: blue;
- font-size: 18px;
-  padding: 20px 40px;
+  font-size: 18px;
+  padding: 1em;
   margin: 20px 0;
   width: 100%;
 }
