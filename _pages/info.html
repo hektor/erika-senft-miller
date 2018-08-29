@@ -55,8 +55,8 @@ permalink: /info/
             <div class="col-9">
                 <p><strong>Media Links</strong></p>
                 <ul class="press">
-                    {% assign items = site.press %} 
-                    {% assign link = items | reverse %} 
+                    {% assign items = site.press | sort: 'date' | reverse %} 
+                    {% assign link = items %} 
                     {% for link in items %}
                     <li><a href="{{ link.source }}" target="_blank">{{ link.title }} / {{ link.publication }}</a></li>
                     {% endfor %}
