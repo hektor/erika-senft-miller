@@ -9,7 +9,7 @@ permalink: /projects/
         <div class="col-xs-8">
             <p class="blue">Archive</p>
             {% assign items = site.projects | sort: 'order' %} {% assign projects = items %} {% for project in items reversed %}
-                <a href="{{ project.url | relative_url }}" alt="{{ project.title }}" class="row title-black">{{ project.title }}</a>
+                <a href="{{ project.url | relative_url }}" alt="{{ project.title }}" class="row archive-item">{{ project.title }}</a>
             {% endfor %}
         </div>
         <div class="col-xs-3">

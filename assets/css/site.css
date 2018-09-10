@@ -291,6 +291,11 @@ textarea {
     top: -15vh;
 }
 
+.archive-item {
+    font-size: 2em;
+    line-height: 1.35;
+}
+
 .upcoming-item {
     display: block;
     padding: 1em 0;
@@ -341,7 +346,6 @@ textarea {
 
 table {
     width: 100%;
-    margin: 3em 0;
     border-collapse: collapse;
 }
 
