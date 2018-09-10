@@ -36,6 +36,10 @@ body {
     background-color: black;
 }
 
+.row-full {
+    min-height: 100vh !important;
+}
+
 .footer {
     display: none !important;
 }
@@ -86,22 +90,9 @@ body {
     opacity: 1;
 }
 
-.row {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-.row-small {
-    border-bottom: none;
-    margin-top: 60px;
-}
-
-.row-inner { 
-    padding: 5vh; 
-    max-width: 1400px;
-    margin: auto;
-    width: 100%;
+.home-link a:after {
+    font-family: "Font Awesome 5 Pro";
+    content: '\f30b';
+    padding-left: .5em;
+    font-weight: 400;
 }

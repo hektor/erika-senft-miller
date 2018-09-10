@@ -1,11 +1,9 @@
- <div class="navigation">
-     <div class="navigation-inner">
-         <div class="nav-left">
-             <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
-         </div>
-         <div class="nav-right">
-             <a class="page-link" href="{{ site.baseurl }}archive/">Archive</a>
-             <a class="page-link" href="{{ site.baseurl }}info/">Info</a>
-         </div>
-     </div>
+<div class="navigation row middle-xs between-xs">
+    <div class="col-xs-8">
+        <a class="site-title" rel="author" href="{{ site.baseurl }}">{{ site.title | escape }}</a>
+    </div>
+    <div class="col-xs-4 end-xs">
+        <a class="page-link" href="{{ site.baseurl }}projects/">Projects</a>
+        <a class="page-link" href="{{ site.baseurl }}info/">Info</a>
+    </div>
 </div>
