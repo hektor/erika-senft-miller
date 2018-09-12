@@ -1,5 +1,9 @@
 // preloader
 
+function goBack() {
+    window.history.back()
+}
+
 $(window).on('load', function () {
     $('#status').delay(2000).fadeOut();
     $('#preloader').delay(2250).fadeOut('slow');
