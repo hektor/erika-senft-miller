@@ -125,6 +125,10 @@ p a {
     color: blue;
 }
 
+.svg-inline--fa {
+    margin-right: 1em;
+}
+
 a:hover {
     color: blue;
 }
@@ -160,11 +164,9 @@ h2 {
 .button {
     color: blue;
     display: inline-block;
-    padding: 2em;
+    padding: 1.5em;
     cursor: pointer;
     border: 1px solid whitesmoke;
-    width: 100%;
-    margin: 1em 0;
     text-align: center;
 }
 
