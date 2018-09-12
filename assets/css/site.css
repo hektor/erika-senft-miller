@@ -1,52 +1,62 @@
 /* Mobile */
 
 @media only screen and (max-width: 640px) {
-    .title-white { font-size: 24px !important; }
-    .title-black { font-size: 24px !important; }
+    .title-white {
+        font-size: 24px !important;
+    }
+    .title-black {
+        font-size: 24px !important;
+    }
 }
 
 /* Preloader */
 
 #preloader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: white;
-  z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    z-index: 100;
 }
 
 #status {
-  width: 200px;
-  height: 200px;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  background-image: url(../loader-whitebg.gif);
-  background-repeat: no-repeat;
-  background-position: center;
-  margin: -100px 0 0 -100px;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background-image: url(../loader-whitebg.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: -100px 0 0 -100px;
 }
 
 /* Universal */
 
-*, *:before, *:after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  }
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
 
-html,body {
-    height:100%;
-    margin:0;
-    font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+html,
+body {
+    height: 100%;
+    margin: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     font-size: 16px;
     text-decoration: none;
 }
 
-html>body .content { height:auto; }
-#content { 
+html > body .content {
+    height: auto;
+}
+
+#content {
     min-height: 100vh;
 }
 
@@ -75,9 +85,9 @@ section {
 }
 
 img {
-  height: auto;
-  width: auto;
-  max-width: 100%;
+    height: auto;
+    width: auto;
+    max-width: 100%;
 }
 
 /* Navigation & Footer */
@@ -88,7 +98,9 @@ img {
     font-size: .9em;
 }
 
-a.page-link { padding-left: 15px; }
+a.page-link {
+    padding-left: 15px;
+}
 
 .footer {
     min-height: 7.5vh;
@@ -107,6 +119,11 @@ ul {
 .blue {
     color: blue;
 }
+
+.lightgrey {
+    color: lightgray;
+}
+
 
 p {
     line-height: 1.6em;
@@ -165,6 +182,7 @@ h2 {
     color: blue;
     display: inline-block;
     padding: 1.5em;
+    margin: .5em 0;
     cursor: pointer;
     border: 1px solid whitesmoke;
     text-align: center;
@@ -208,7 +226,7 @@ h2 {
 }
 
 #newsletter-signup button {
-    margin: 0; 
+    margin: 0;
 }
 
 #form {
@@ -218,24 +236,26 @@ h2 {
 }
 
 .project {
-  display: block;
-  padding: 5px 0;
+    display: block;
+    padding: 5px 0;
 }
 
 .form-group {
-  display: block;
-  margin-bottom: 20px;
+    display: block;
+    margin-bottom: 20px;
 }
 
 .form-group:last-child {
-  margin-bottom: 0px;
+    margin-bottom: 0px;
 }
 
 .form-label {
-  margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 
-input:focus, textarea:focus, select:focus {
+input:focus,
+textarea:focus,
+select:focus {
     outline-offset: none !important;
     border: 1px solid blue;
     border-radius: 5px;
@@ -253,25 +273,25 @@ input:focus, textarea:focus, select:focus {
 }
 
 .form-control {
-  display: block;
-  border: 1px solid lightgrey;
-  width: 100%;
-  padding: 20px 10px;
-  font-size: 16px;
+    display: block;
+    border: 1px solid lightgrey;
+    width: 100%;
+    padding: 20px 10px;
+    font-size: 16px;
 }
 
 button {
-  border: 1px solid blue;
-  background-color: white;
-  color: blue;
-  font-size: 18px;
-  padding: 1em;
-  width: 100%;
+    border: 1px solid blue;
+    background-color: white;
+    color: blue;
+    font-size: 18px;
+    padding: 1em;
+    width: 100%;
 }
 
 button:hover {
-  background-color: blue;
-  color: white;
+    background-color: blue;
+    color: white;
 }
 
 textarea {
@@ -282,8 +302,8 @@ textarea {
     font-size: 16px;
     min-height: 120px;
     -webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 /* Projects List */
@@ -326,7 +346,7 @@ textarea {
     text-align: center;
 }
 
-.scroll-icon{
+.scroll-icon {
     font-family: "Font Awesome 5 Pro";
     position: absolute;
     bottom: 2.5vh;
@@ -376,11 +396,11 @@ td {
     td {
         width: 100% !important;
     }
-    
+
     td:first-child {
         padding-bottom: 1.5em;
     }
-    
+
     tr {
         flex-direction: column;
     }
@@ -438,7 +458,8 @@ table a {
 
 .panel {
     max-width: 1400px;
-    margin-bottom: 2em;;
+    margin-bottom: 2em;
+    ;
     display: none;
     overflow: hidden;
 }
@@ -464,26 +485,28 @@ table a {
     margin: 0 !important;
 }
 
-.item-video { 
-    position: relative; 
-    padding-bottom: 56.25%; 
+.item-video {
+    position: relative;
+    padding-bottom: 56.25%;
     height: 0;
     margin: 0 0 1.5em;
-    overflow: hidden; 
-    max-width: 100%; 
-    height: auto; 
-} 
+    overflow: hidden;
+    max-width: 100%;
+    height: auto;
+}
 
 .vp-player-layout {
     top: 0 !important;
 }
 
-.item-video iframe, .item-video object, .item-video embed { 
-    position: absolute; 
-    top: 0; 
-    left: 0; 
-    width: 100%; 
-    height: 100%; 
+.item-video iframe,
+.item-video object,
+.item-video embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .item-text {
@@ -507,6 +530,7 @@ table a {
     opacity: 1;
     border: 1px solid black;
 }
+
 .item-image {
     background: #fff;
     margin: 0 0 1rem;
@@ -533,14 +557,13 @@ table a {
 
 /* Grids */
 
-
 @media only screen and (min-width: 640px) {
     .grid {
         -moz-column-count: 1;
         -webkit-column-count: 1;
         column-count: 1;
     }
-    
+
     .grid:last-child {
         margin-bottom: 0px !important;
     }
@@ -552,11 +575,11 @@ table a {
         -webkit-column-count: 2;
         column-count: 2;
     }
-    
+
     .item-image:last-child {
         margin-bottom: 0px !important;
     }
-    
+
     .item-image:nth-last-child(-1) {
         margin-bottom: 0px !important;
     }
@@ -585,7 +608,7 @@ table a {
 }
 
 @media only screen and (min-width: 900px) {
-    .grid-col-2  {
+    .grid-col-2 {
         -moz-column-count: 2;
         -webkit-column-count: 2;
         column-count: 2;
@@ -593,7 +616,7 @@ table a {
 }
 
 @media only screen and (min-width: 1200px) {
-    .grid-col-2  {
+    .grid-col-2 {
         -moz-column-count: 2;
         -webkit-column-count: 2;
         column-count: 2;
@@ -601,7 +624,7 @@ table a {
 }
 
 @media only screen and (min-width: 1280px) {
-    .grid-col-2  {
+    .grid-col-2 {
         width: 100%;
     }
 }
