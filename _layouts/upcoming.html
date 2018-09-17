@@ -1,21 +1,18 @@
 --- 
 layout: default 
 ---
+
+
 <div class="row row-full middle-xs center-xs">
-    <i class="far fa-chevron-down fa-2x scroll-icon"></i>
-    <img class="upcoming-page-image" src="/assets/images/upcoming/image.png">
-    <div class="col-xs-12 center-xs upcoming-page-title">{{ page.title }}</div>
-</div>
-<div class="row row-full middle-xs center-xs">
-    <div class="row col-xs-9 start-xs">
-        <div class="col-xs-6">
-            <div class="title-black">{{ page.title }}</div>
-            <ul>
-                <li>{{ page.time }}</li>
-                <li>{{ page.site }}</li>
-                <li>{{ page.location }}</li>
-            </ul>
-        </div>
-        <div class="col-xs-6">{{ content }}</div>
-    </div>
+    <div class="row col-xs-7 start-xs">
+    <div>
+        <ul>
+            <li>{{ page.time }}</li>
+            <li>{{ page.site }}</li>
+            <li>{{ page.location }}</li>
+        </ul>
+    </div>    
+    <div class="upcoming-page-title">{{ page.title }}</div>
+    <div>{{ content }}</div>
+    </div>    
 </div>

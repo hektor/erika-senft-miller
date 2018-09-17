@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: project
 title: Output / Input
 value: output-input
 order: 7
@@ -8,36 +8,5 @@ location: Burlington, Vermont
 time: May 25–June 4, 2018
 ---
 
-<div class="row row-md middle-xs">
-    <div class="banner-info col-xs-12">
-        <div class="banner-title">{{ page.title }}</div>
-        <div class="banner-excerpt">
-            {{ page.time }} / {{ page.site }} / {{ page.location }}
-        </div>
-    </div>
-</div>
-<div class="row top-xs">
-    <div class="col-xs-8">
-        <div class="accordion acc-project open">Description</div>
-        <div class="panel" style="display: block;">
-            {% capture project-description %}{% include_relative _project-description.md %}{% endcapture %} {{ project-description | markdownify }}
-        </div>
-    </div>
-    <div class="col-xs-3 col-xs-offset-1">
-        <div class="accordion acc-project">Details</div>
-        <div class="panel">
-            {% capture project-info %}{% include_relative _project-info.md %}{% endcapture %} {{ project-info | markdownify }}
-        </div>
-    </div>
-</div>
 
-
-<div class="row row-md">
-    <div class="accordion acc-static col-xs-12">Inputs</div>
-
-    <div class="gallery">
-        <div class="grid">
-            {% include _projects/output-input-items-audience.html %}
-        </div>
-    </div>
-</div>
+{% include _projects/output-input-items.html %}

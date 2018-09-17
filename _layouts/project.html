@@ -26,15 +26,10 @@ layout: default
 </div>    
 
 <div class="row row-md">
-        <div class="accordion acc-static col-xs-12">Perspectives</div>
-
+    <div class="accordion acc-static col-xs-12">Perspectives</div>
     <div class="gallery">
         <div class="grid">
-            {% for image in site.static_files %} {% if image.path contains page.value %}
-            <div class="item-image">
-                <img src="{{ image.path }}" alt="">
-            </div>
-            {% endif %} {% endfor %}
+            {{ content }}
         </div>
     </div>
 </div>

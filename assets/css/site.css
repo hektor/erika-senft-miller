@@ -343,8 +343,8 @@ textarea {
 }
 
 .upcoming-page-title {
-    font-size: 5em;
-    text-align: center;
+    font-size: 4em;
+    padding: 1em 0;
 }
 
 .scroll-icon {
@@ -426,7 +426,7 @@ table a {
 
 .acc-project:after {
     font-family: 'Font Awesome 5 Pro';
-    font-weight: 500;
+    font-weight: 900;
     content: '\f067';
     float: right;
 }
@@ -441,6 +441,7 @@ table a {
 
 .acc-project.open:after {
     font-family: 'Font Awesome 5 Pro';
+    font-weight: 900;    
     content: '\f068';
 }
 
@@ -453,6 +454,7 @@ table a {
 
 .acc-static:after {
     font-family: 'Font Awesome 5 Pro';
+    font-weight: 900; 
     content: '\f111';
     float: right;
 }

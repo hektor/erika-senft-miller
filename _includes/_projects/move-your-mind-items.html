@@ -1,0 +1,5 @@
+{% for image in site.static_files %} {% if image.path contains page.value %}
+<div class="item-image">
+    <img src="{{ image.path }}" alt="">
+</div>
+{% endif %} {% endfor %}
