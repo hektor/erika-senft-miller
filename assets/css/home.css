@@ -33,11 +33,16 @@
 /* Structure */
 
 body {
-    background-color: black;
+    background-image: url(/assets/images/salt/salt-amira-silverman-1518111661.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
 }
 
-.row-full {
-    min-height: 100vh !important;
+@media screen and (max-width: 640px) {
+    .row-full {
+        padding: 0 0 3em 0 !important;
+    }
 }
 
 .footer {
@@ -80,7 +85,8 @@ body {
 .home-link a {
     font-size: 28px;
     color: white;
-    display: inline-block;
+    width: 100%;
+    display: block;
     margin: .5vh 0 !important;
     opacity: .4;
 }
@@ -92,7 +98,7 @@ body {
 
 .home-link a:after {
     font-family: "Font Awesome 5 Pro";
-    content: '\f30b';
+    font-weight: 300;
+    content: '\f178';
     padding-left: .5em;
-    font-weight: 400;
 }

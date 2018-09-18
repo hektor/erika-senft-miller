@@ -11,13 +11,13 @@ layout: default
     </div>
 </div>
 <div class="row top-xs">
-<div class="col-xs-8">
+<div class="col-xs-12">
     <div class="accordion acc-project open">Description</div>
     <div class="panel" style="display: block;">
         {% capture project-description %}{% include_relative _project-description.md %}{% endcapture %} {{ project-description | markdownify }}
     </div>
 </div>
-<div class="col-xs-3 col-xs-offset-1">
+<div class="col-xs-12">
     <div class="accordion acc-project">Details</div>
     <div class="panel">
         {% capture project-info %}{% include_relative _project-info.md %}{% endcapture %} {{ project-info | markdownify }}

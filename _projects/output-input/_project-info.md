@@ -1,16 +1,4 @@
-**Duration**
-90 minutes
+*Output / Input* was an interactive installation created through a collaboration between artist Erika Senft Miller and [Alder Studio](https://alder.world) at the Karma Bird House Gallery, 47 Maple St. Burlington, Vermont from May 24 – June 4 during normal gallery hours. The work was installed shortly after the launch of this website, the process of creating which considered the question; *what is website specific?*
 
-**Location**
-Vermont Arts Council
-Montpelier, Vermont
 
-**Made in collaboration with** Nancy Winship Milliken and Michael Zebrowski
-
-**Dancers** Holly Chagnon, Mireya Guerra, Sage Horsey, Mia Pinheiro (only in scene one), Lydia Kern, Navah Stein, and Elizabeth Marie Seyler instructing Tango during the rehearsal for scene two and performing in scene two.
-
-**Photographer** Renee Greenlee
-
-**Video** Micah Dudash
-
-**Costume Design and Production** Erika Senft Miller
+**Photographer** Dan Cardon

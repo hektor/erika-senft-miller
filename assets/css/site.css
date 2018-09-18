@@ -84,6 +84,16 @@ section {
     min-height: 85vh;
 }
 
+@media screen and (max-width: 640px) {
+    .row-full, .row-xs, .row-sm, .row-md, .row-lg {
+        padding: 2em 0;
+    }
+}
+
+.whitesmoke {
+    background-color: whitesmoke;
+}
+
 img {
     height: auto;
     width: auto;
@@ -365,6 +375,16 @@ textarea {
     margin: .5vh 0;
 }
 
+.banner-excerpt li {
+    width: 100%;
+    display: block;
+}
+
+ul.banner-excerpt {
+    padding: 1em 0;
+}
+
+
 /* Project Details */
 
 table {
@@ -441,7 +461,7 @@ table a {
 
 .acc-project.open:after {
     font-family: 'Font Awesome 5 Pro';
-    font-weight: 900;    
+    font-weight: 900;
     content: '\f068';
 }
 
@@ -454,7 +474,7 @@ table a {
 
 .acc-static:after {
     font-family: 'Font Awesome 5 Pro';
-    font-weight: 900; 
+    font-weight: 900;
     content: '\f111';
     float: right;
 }
@@ -514,14 +534,12 @@ table a {
 
 .item-text {
     display: inline-block;
-    background: white;
+    background: whitesmoke;
     margin: 0 0 1.5em;
     width: 100%;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
-    border: 1px solid whitesmoke;
-    opacity: .3;
 }
 
 .item-text p {
@@ -529,10 +547,6 @@ table a {
     font-family: monospace;
 }
 
-.item-text:hover {
-    opacity: 1;
-    border: 1px solid black;
-}
 
 .item-image {
     background: #fff;
