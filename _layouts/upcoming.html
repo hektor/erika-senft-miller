@@ -1,0 +1,19 @@
+--- 
+layout: default 
+---
+
+
+<div class="row row-full middle-xs center-xs">
+    <div class="row col-xs-12 col-md-6 start-xs">
+        <div class="row banner-title">{{ page.title }}</div>
+        <p class="row">{{ content }}</p>
+        <ul class="row banner-excerpt">
+            <li>{{ page.time }}</li>
+            <li>{{ page.site }}</li>
+            <li>{{ page.location }}</li>
+        </ul>
+    </div>
+</div>
+<div class="row row-full middle-xs center-xs whitesmoke">
+    <img class="col-xs-9 col-md-4" src="{{ page.image }}">
+</div>

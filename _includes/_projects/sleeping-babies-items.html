@@ -1,0 +1,7 @@
+<div class="item-video"><iframe src="https://player.vimeo.com/video/231093227" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe></div>
+
+{% for image in site.static_files %} {% if image.path contains page.value %}
+<div class="item-image">
+    <img src="{{ image.path }}" alt="">
+</div>
+{% endif %} {% endfor %}

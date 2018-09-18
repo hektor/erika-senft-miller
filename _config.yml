@@ -12,7 +12,7 @@ collections:
   projects:
     output: true
     permalink: /:collection/:name
-  ongoing:
+  upcoming:
     output: true
     permalink: /:collection/:name   
   press:

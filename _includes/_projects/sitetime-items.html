@@ -1,0 +1,15 @@
+<div class="item-text">
+    <p>Scene One: Slumping Seemingly still on the outside, Cellular and fluids — lots of movement — continuously pumping, flowing, rippling within the tree In tree time rhythm. Photosynthesis - a mutual exchange Give and take In tree time rhythm Tapping sweet sap in spring - boiling down to maple syrup Fueling us Us fueling the tree In tree time rhythm.</p>
+    <p>Erika Senft Miller</p>
+</div>
+
+<div class="item-text">
+    <p>Scene Two: Falling Tears dripping catching gripping tears slipping through falling falling into long bottomless seas falling into love tears falling into love</p>
+    <p>Erika Senft Miller</p>
+</div>
+
+{% for image in site.static_files %} {% if image.path contains page.value %}
+<div class="item-image">
+    <img src="{{ image.path }}" alt="">
+</div>
+{% endif %} {% endfor %}
