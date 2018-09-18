@@ -446,7 +446,7 @@ table a {
 
 .acc-project:after {
     font-family: 'Font Awesome 5 Pro';
-    font-weight: 900;
+    font-weight: 400;
     content: '\f067';
     float: right;
 }
@@ -461,7 +461,7 @@ table a {
 
 .acc-project.open:after {
     font-family: 'Font Awesome 5 Pro';
-    font-weight: 900;
+    font-weight: 400;
     content: '\f068';
 }
 
@@ -474,7 +474,7 @@ table a {
 
 .acc-static:after {
     font-family: 'Font Awesome 5 Pro';
-    font-weight: 900;
+    font-weight: 300;
     content: '\f111';
     float: right;
 }
