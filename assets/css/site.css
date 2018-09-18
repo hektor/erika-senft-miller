@@ -474,9 +474,10 @@ table a {
 
 .acc-static:after {
     font-family: 'Font Awesome 5 Pro';
-    font-weight: 300;
+    font-weight: 500;
     content: '\f111';
     float: right;
+    color: blue;
 }
 
 .panel {
