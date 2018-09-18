@@ -153,6 +153,10 @@ p a {
     color: blue;
 }
 
+a i {
+    padding-right: .5em;
+}
+
 .svg-inline--fa {
     margin-right: 1em;
 }
@@ -200,7 +204,7 @@ h2 {
 }
 
 .button i {
-    padding-right: 1em;
+    padding-right: .5em;
 }
 
 .button:hover {
