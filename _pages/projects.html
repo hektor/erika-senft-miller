@@ -12,7 +12,7 @@ permalink: /projects/
             <a href="{{ project.url | relative_url }}" alt="{{ project.title }}" class="row archive-item">{{ project.title }}</a> {% endfor %}
         </div>
         <div class="row-md col-xs-12 col-md-3">
-            <p class="blue">Upcomming</p>
+            <p class="blue">Upcoming</p>
             {% assign items = site.upcoming | sort: 'order' %} {% assign upcoming = items %} {% for upcoming in items reversed %}
 
             <a href="{{ upcoming.url | relative_url }}" alt="{{ upcoming.title }}" class="upcoming-item">
