@@ -64,6 +64,15 @@ section {
     border-bottom: 1px solid whitesmoke;
 }
 
+#upcoming-section {
+    padding: 3em 0;
+}
+
+hr {
+    margin: 2em 0;
+    border: 1px solid whitesmoke;
+}
+
 .row-xs {
     min-height: 10vh;
 }
