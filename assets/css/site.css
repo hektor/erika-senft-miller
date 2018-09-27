@@ -100,11 +100,6 @@ img {
     max-width: 100%;
 }
 
-hr {
-    margin: 2em 0;
-    border: 1px solid whitesmoke;
-}
-
 /* Navigation & Footer */
 
 .navigation {
@@ -338,10 +333,6 @@ textarea {
 .archive-item {
     font-size: 2em;
     line-height: 1.35;
-}
-
-#upcoming-section {
-    padding: 3em 0;
 }
 
 .upcoming-item {
