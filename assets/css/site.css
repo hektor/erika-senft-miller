@@ -68,6 +68,8 @@ section {
     padding: 3em 0;
 }
 
+
+
 hr {
     margin: 2em 0;
     border: 1px solid whitesmoke;
@@ -94,7 +96,11 @@ hr {
 }
 
 @media screen and (max-width: 640px) {
-    .row-full, .row-xs, .row-sm, .row-md, .row-lg {
+    .row-full,
+    .row-xs,
+    .row-sm,
+    .row-md,
+    .row-lg {
         padding: 2em 0;
     }
 }
@@ -370,6 +376,10 @@ textarea {
 .upcoming-page-title {
     font-size: 4em;
     padding: 1em 0;
+}
+
+.upcoming-image {
+    padding: 3em 0;
 }
 
 .scroll-icon {
