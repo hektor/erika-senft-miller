@@ -459,7 +459,6 @@ table a {
 .accordion {
     cursor: pointer;
     width: 100%;
-    max-width: 1400px;
     margin: auto;
     text-align: left;
     padding: 1.5em 0;
@@ -506,9 +505,7 @@ table a {
 }
 
 .panel {
-    max-width: 1400px;
     margin-bottom: 2em;
-    ;
     display: none;
     overflow: hidden;
 }
