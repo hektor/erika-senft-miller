@@ -58,6 +58,8 @@ html > body .content {
 
 #content {
     min-height: 100vh;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 section {
@@ -67,6 +69,8 @@ section {
 #upcoming-section {
     padding: 3em 0;
 }
+
+
 
 hr {
     margin: 2em 0;
@@ -94,7 +98,11 @@ hr {
 }
 
 @media screen and (max-width: 640px) {
-    .row-full, .row-xs, .row-sm, .row-md, .row-lg {
+    .row-full,
+    .row-xs,
+    .row-sm,
+    .row-md,
+    .row-lg {
         padding: 2em 0;
     }
 }
@@ -372,6 +380,10 @@ textarea {
     padding: 1em 0;
 }
 
+.upcoming-image {
+    padding: 3em 0;
+}
+
 .scroll-icon {
     font-family: "Font Awesome 5 Pro";
     position: absolute;
@@ -449,7 +461,6 @@ table a {
 .accordion {
     cursor: pointer;
     width: 100%;
-    max-width: 1400px;
     margin: auto;
     text-align: left;
     padding: 1.5em 0;
@@ -496,9 +507,7 @@ table a {
 }
 
 .panel {
-    max-width: 1400px;
     margin-bottom: 2em;
-    ;
     display: none;
     overflow: hidden;
 }
