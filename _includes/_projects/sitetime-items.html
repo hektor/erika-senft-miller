@@ -10,6 +10,6 @@
 
 {% for image in site.static_files %} {% if image.path contains page.value %}
 <div class="item-image">
-    <img src="{{ image.path }}" alt="">
+    <img src="{{ image.path }}" alt="" data-echo="{{ image.path }}">
 </div>
 {% endif %} {% endfor %}

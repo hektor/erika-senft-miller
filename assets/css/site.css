@@ -4,6 +4,7 @@
     .title-white {
         font-size: 24px !important;
     }
+
     .title-black {
         font-size: 24px !important;
     }
@@ -52,7 +53,7 @@ body {
     text-decoration: none;
 }
 
-html > body .content {
+html>body .content {
     height: auto;
 }
 
@@ -98,6 +99,7 @@ hr {
 }
 
 @media screen and (max-width: 640px) {
+
     .row-full,
     .row-xs,
     .row-sm,
@@ -129,7 +131,7 @@ a.page-link {
     padding-left: 15px;
 }
 
-.footer {
+footer {
     min-height: 7.5vh;
     font-size: .9em;
     border-top: 1px solid whitesmoke;
