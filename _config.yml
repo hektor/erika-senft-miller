@@ -7,8 +7,6 @@ collections:
   pages:
     output: true
     permalink: /:title/ 
-  upload:
-    output: true
   projects:
     output: true
     permalink: /:collection/:name
