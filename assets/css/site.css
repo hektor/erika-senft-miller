@@ -581,7 +581,7 @@ table a {
     -webkit-box-sizing: border-box;
 }
 
-.item-image.col-xs-6 {
+.item-image.col-xs-12 {
     margin: 0 0 1.5rem 0;
 }
 
