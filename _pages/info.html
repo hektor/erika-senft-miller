@@ -16,11 +16,9 @@ permalink: /info/
 wearable soft sculpture, she plays with liminal space, especially the lines between installation and performance, and audience and performer.</div>
 </div>
 <div class="row middle-xs">
-    <div class="grid-col-2">
         {% for image in site.static_files %} {% if image.path contains 'erika-bio' %}
-        <div class="item-image-row"><img src="{{image.path}}"></div>
+        <div class="item-image col-xs-12 col-sm-6"><img src="{{image.path}}"></div>
         {% endif %} {% endfor %}
-    </div>
 </div>
 <div class="row row-md middle-xs center-xs">
     <div class="row start-xs col-xs-12 col-md-10">
@@ -30,7 +28,7 @@ wearable soft sculpture, she plays with liminal space, especially the lines betw
 </div>
 <div class="row row-sm middle-xs">
         {% for image in site.static_files %} {% if image.path contains 'movement-lab' %}
-        <div class="item-image col-xs-6"><img src="{{image.path}}"></div>
+        <div class="item-image col-xs-12 col-sm-6"><img src="{{image.path}}"></div>
         {% endif %} {% endfor %}
 </div>
 
