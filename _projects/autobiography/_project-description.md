@@ -1,0 +1,6 @@
+*AutoBiography: A Car Opera in Five Acts* explored cars and the stories they tell in a performance based on Richard Wagner’s Ring Cycle. The multimedia experience featured over 60 collaborators and tapped into our memories of, and fascination with, cars. As memory played such a powerful role in the performances, and with memory being so closely linked to smell, scent mixologists created custom scents for each installation.
+
+The Car Opera took place on five levels of a public, fully operating, parking garage. It featured nine installations — all unique yet interrelated — inside cars and the garage itself. Each installation echoed an act or theme of the Ring Cycle. Dancers and musicians interacted in and around the vehicles and various sites within the garage. Roughly 100 audience members experienced the spectacle from inside the cars on a guided tour, while over 200 more witnessed
+from a set pathway within the garage on a self-guided tour. Wall text next to each installation provided additional context for the audience and highlighted the convergence of gallery and theater in a mundane space.
+
+The Car Opera was the first iteration of the AutoBiography project, which also includes AutoBiography Magazine, and an upcoming show of video and installation work from various contributors at the Karma Bird House Gallery in Burlington, VT. Stay tuned for new layers.

@@ -581,6 +581,10 @@ table a {
     -webkit-box-sizing: border-box;
 }
 
+.item-image.col-xs-6 {
+    margin: 0 0 1.5rem 0;
+}
+
 .item-image-row {
     background: #fff;
     margin: 0;
@@ -617,13 +621,13 @@ table a {
         column-count: 2;
     }
 
-    .item-image:last-child {
+/*    .item-image:last-child {
         margin-bottom: 0px !important;
     }
 
     .item-image:nth-last-child(-1) {
         margin-bottom: 0px !important;
-    }
+    } */
 }
 
 @media only screen and (min-width: 1200px) {
