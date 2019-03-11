@@ -3,35 +3,25 @@ layout: default
 title: Info
 permalink: /info/
 ---
-
-
-
-
-
- 
-
-
 <div class="row row-lg middle-xs center-xs">
-    <div class="row start-xs col-xs-12 col-md-10 title-black">Erika Senft Miller is an interdisciplinary performance artist and collaborative creator of multi-sensory experiences. Her work examines and contextualizes unique physical sites by employing numerous art forms that collectively establish human exploration, and invite empathy and connection within large-scale performances. With movement, light, sound, video and
-wearable soft sculpture, she plays with liminal space, especially the lines between installation and performance, and audience and performer.</div>
+    <div class="row start-xs col-xs-12 col-md-10 title-black">Erika Senft Miller is an interdisciplinary performance artist and collaborative creator of multi-sensory experiences. Her work examines and contextualizes unique physical sites by employing numerous art forms that collectively establish human exploration, and invite empathy and connection within large-scale performances. With movement, light, sound, video and wearable soft sculpture, she plays with liminal space, especially the lines between installation and performance, and audience and performer.</div>
 </div>
 <div class="row middle-xs">
-        {% for image in site.static_files %} {% if image.path contains 'erika-bio' %}
-        <div class="item-image col-xs-12 col-sm-6"><img src="{{image.path}}"></div>
-        {% endif %} {% endfor %}
+    {% for image in site.static_files %} {% if image.path contains 'erika-bio' %}
+    <div class="item-image col-xs-12 col-sm-6"><img src="{{image.path}}"></div>
+    {% endif %} {% endfor %}
 </div>
 <div class="row row-md middle-xs center-xs">
     <div class="row start-xs col-xs-12 col-md-10">
         <p>Senft Miller speaks five languages and has relocated seventeen times, factors that inform her process as she interacts with both people and sites. She has performed in the United States and Europe, and has spent over twenty years teaching in universities, theaters, businesses, and community centers. She trained in dance theater with Fe Reichelt, holds a doctorate in Dance Education, a masters in Physical Therapy and is a certified teacher of The Alexander Technique.</p>
-        <p>In 2017 Miller organized a core group of movement collaborators with wildly diverse backgrounds to research and play with the lines between installation and performance and audience and performer. Together they comprise her <a href="https://www.instagram.com/erikamillerlab" target="_blank">Performance Lab</a>, and have collaborated on a variety of projects including <a href="{{ site.baseurl }}projects/sitetime/">SiteTime</a>  and <a href="{{ site.baseurl }}projects/offsiteontime/">offSiteonTime</a>. Its current members include Holly Chagnon, and Mireya Guerra, Lydia Kern, Navah Stein.</p>
+        <p>In 2017 Miller organized a core group of movement collaborators with wildly diverse backgrounds to research and play with the lines between installation and performance and audience and performer. Together they comprise her <a href="https://www.instagram.com/erikamillerlab" target="_blank">Performance Lab</a>, and have collaborated on a variety of projects including <a href="{{ site.baseurl }}projects/sitetime/">SiteTime</a> and <a href="{{ site.baseurl }}projects/offsiteontime/">OffSiteOnTime</a>. Its current members include Holly Chagnon, and Mireya Guerra, Lydia Kern, Navah Stein.</p>
     </div>
 </div>
 <div class="row row-sm middle-xs">
-        {% for image in site.static_files %} {% if image.path contains 'movement-lab' %}
-        <div class="item-image col-xs-12 col-sm-6"><img src="{{image.path}}"></div>
-        {% endif %} {% endfor %}
+    {% for image in site.static_files %} {% if image.path contains 'movement-lab' %}
+    <div class="item-image col-xs-12 col-sm-6"><img src="{{image.path}}"></div>
+    {% endif %} {% endfor %}
 </div>
-
 <section id="contact" class="row row-lg middle-xs start-xs col-xs-12 col-md-10 col-lg-8 col-md-offset-1 col-lg-offset-2">
     <div class="row top-xs">
         <div class="col-xs-12 col-md-3">
@@ -50,23 +40,23 @@ wearable soft sculpture, she plays with liminal space, especially the lines betw
                 {% endfor %}
             </ul>
         </div>
-    </div>    
+    </div>
 </section>
 <section id="social" class="row row-xs middle-xs center-md start-xs">
     <div class="col-xs-12 col-md-3">
         <a href="https://www.instagram.com/erikasenftm/" target="_blank" class="social">
-                <i class="fab fa-instagram"></i>ErikaSenftMiller</a>
+            <i class="fab fa-instagram"></i>ErikaSenftMiller</a>
     </div>
     <div class="col-xs-12 col-md-3">
         <a href="https://www.instagram.com/erikamillerlab" target="_blank" class="social">
-                <i class="fab fa-instagram"></i>ErikaMillerLab</a>
+            <i class="fab fa-instagram"></i>ErikaMillerLab</a>
     </div>
     <div class="col-xs-12 col-md-3">
         <a href="https://vimeo.com/erikasenftmiller/" target="_blank" class="social">
-                <i class="fab fa-vimeo"></i>Vimeo</a>
+            <i class="fab fa-vimeo"></i>Vimeo</a>
     </div>
     <div class="col-xs-12 col-md-3">
         <a href="https://medium.com/@erikasenftmiller/" target="_blank" class="social">
-                <i class="fab fa-medium"></i>Medium</a>
-    </div>    
+            <i class="fab fa-medium"></i>Medium</a>
+    </div>
 </section>
