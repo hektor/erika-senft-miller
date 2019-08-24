@@ -1,47 +1,60 @@
 backend:
-  name: git-gateway
-  branch: master
+  name:             git-gateway
+  branch:           master
 
-display_url: https://erikasenftmiller.com
-media_folder: "assets/images/upcoming"
+display_url:        https://erikasenftmiller.com
+media_folder:       "assets/images/upcoming"
 
 collections:
-  - label: "Upcoming Projects"
-    name: "upcoming"
-    folder: "_upcoming"
+  - label:          "Upcoming Projects"
+    name:           "upcoming"
+    folder:         "_upcoming"
     label_singular: "Upcoming Project"
-    create: true
+    create:         true
     editor:
-      preview: false
+      preview:      false
     fields:
       - {
-        label: "Layout",
-        name: "layout",
-        widget: "hidden",
-        default: "upcoming"
+        label:      "Layout",
+        name:       "layout",
+        widget:     "hidden",
+        default:    "upcoming"
         }
       - {
-        label: "Title",
-        name: "title",
-        widget: "string"
+        label:      "Title",
+        name:       "title",
+        widget:     "string"
         }
       - {
-        lable: "Date",
-        name: "date",
-        widget: "datetime",
+        lable:      "Event Date",
+        name:       "date",
+        widget:     "datetime",
         }
       - {
-        label: "Site",
-        name: "site",
-        widget: "string"
+        label:      "Site / Location",
+        name:       "site",
+        widget:     "string"
         }
       - {
-        label: "Location Details",
-        name: "location",
-        widget: "string"
+        label:      "Site / Location Details",
+        name:       "location",
+        widget:     "string",
+        required:   false
         }
       - {
-        label: "Body",
-        name: "body",
-        widget: "markdown"
+        label:      "Image",
+        name:       "image",
+        widget:     "image",
+        required:   false
+        }
+      - {
+        label:      "Vimeo Number",
+        name:       "video",
+        widget:     "string",
+        required:   false
+        }
+      - {
+        label:      "Body",
+        name:       "body",
+        widget:     "markdown"
         }
