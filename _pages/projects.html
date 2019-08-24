@@ -13,14 +13,8 @@ permalink: /projects/
         </div>
         <div class="row-md col-xs-12 col-md-3">
             <p class="blue">Upcoming</p>
-            {% assign items = site.upcoming | sort: 'order' %} {% assign upcoming = items %} {% for upcoming in items reversed %}
-
-            <a href="{{ upcoming.url | relative_url }}" alt="{{ upcoming.title }}" class="upcoming-item">
-                <p class="upcoming-time">{{ upcoming.time }}</p>
-                <div class="upcoming-title">{{ upcoming.title }}</div>
-                {% endfor %}
-            </a>
-            <br> {% include newsletter-signup.html %}
+            {% include upcoming-projects.html %}
+            {% include newsletter-signup.html %}
         </div>
     </div>
 </div>
