@@ -2,8 +2,7 @@
 layout: upcoming
 title: OffSiteOnTime Scene 7&#58; Drying
 date: 2019-06-05 00:00:00 -0500
-time: June 5, 2019
-site: The Karma Bird House Gallery
+site: Karma Bird House Gallery
 location: 47 Maple Street, Burlington, Vermont
 image: ../assets/images/upcoming/drying.jpg
 ---

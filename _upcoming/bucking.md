@@ -2,7 +2,6 @@
 layout: upcoming
 title: OffSiteOnTime Scene 4&#58; Bucking
 date: 2018-09-18 00:00:00 -0500
-time: September 19, 2018
 site: The Karma Bird House Gallery
 location: 47 Maple Street, Burlington, Vermont
 image: ../assets/images/upcoming/bucking.png

@@ -6,7 +6,7 @@ url: "erikasenftmiller.com"
 collections:
   pages:
     output: true
-    permalink: /:title/ 
+    permalink: /:title/
   projects:
     output: true
     permalink: /:collection/:name
@@ -15,8 +15,8 @@ collections:
     permalink: /:collection/:name   
   press:
     output: false
-    
-kramdown:  
+
+kramdown:
   parse_block_html: true
 
 defaults:
