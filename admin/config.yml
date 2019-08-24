@@ -6,18 +6,42 @@ display_url: https://erikasenftmiller.com
 media_folder: "assets/images/upcoming"
 
 collections:
-  - label: "Upcoming"
+  - label: "Upcoming Projects"
     name: "upcoming"
     folder: "_upcoming"
-    label_singular: "Upcoming Happening"
+    label_singular: "Upcoming Project"
     create: true
     editor:
       preview: false
     fields:
-      - {label: "Layout", name: "layout", widget: "hidden", default: "upcoming"}
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Order", name: "order", widget: "string"}
-      - {label: "Time", name: "time", widget: "string"}
-      - {label: "Site", name: "site", widget: "string"}
-      - {label: "Location", name: "location", widget: "string"}
-      - {label: "Published", name: "published", widget: "boolean", default: "false"}
+      - {
+        label: "Layout",
+        name: "layout",
+        widget: "hidden",
+        default: "upcoming"
+        }
+      - {
+        label: "Title",
+        name: "title",
+        widget: "string"
+        }
+      - {
+        lable: "Date",
+        name: "date",
+        widget: "datetime",
+        }
+      - {
+        label: "Site",
+        name: "site",
+        widget: "string"
+        }
+      - {
+        label: "Location Details",
+        name: "location",
+        widget: "string"
+        }
+      - {
+        label: "Body",
+        name: "body",
+        widget: "markdown"
+        }
