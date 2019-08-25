@@ -7,7 +7,7 @@
 
 {% if projectDate >= curDate %}
   <a href="{{ item.url }}" alt="{{ item.title }}" class="upcoming-item">
-      <p class="upcoming-time">{{ item.time }}</p>
+      <p class="upcoming-time">{{ item.date | date: "%B %-d" }}, {{ item.time }}</p>
       <div class="upcoming-title">{{ item.title }}</div>
   </a>
 
