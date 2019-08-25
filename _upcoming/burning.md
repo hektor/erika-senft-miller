@@ -2,6 +2,7 @@
 layout: upcoming
 title: 'OffSiteOnTime Scene 8: Burning'
 date: 2019-09-26T00:00:00.981Z
+time: '5-6:30pm'
 site: Karma Bird House Gallery
 location: '47 Maple Street Burlington, Vermont'
 image: /assets/images/upcoming/image2.jpg
