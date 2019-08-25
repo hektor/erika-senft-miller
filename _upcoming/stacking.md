@@ -1,6 +1,6 @@
 ---
 layout: upcoming
-title: OffSiteOnTime Scene 6&#58; Stacking
+title: 'OffSiteOnTime Scene 6: Stacking'
 date: 2019-03-05 00:00:00 -0500
 time: March 5, 2019
 site: The Karma Bird House Gallery

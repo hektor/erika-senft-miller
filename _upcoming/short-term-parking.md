@@ -1,6 +1,6 @@
 ---
 layout: upcoming
-title: Short Term Parking
+title: 'Short Term Parking'
 date: 2019-04-02 00:00:00 -0500
 time: May 2, 2019
 location: 47 Maple St. Burlington, Vermont 05401

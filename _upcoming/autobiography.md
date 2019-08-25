@@ -1,6 +1,6 @@
 ---
 layout: upcoming
-title: AutoBiography&#58; A Car Opera in Five Acts
+title: 'AutoBiography: A Car Opera in Five Acts'
 date: 2018-11-04 00:00:00 -0500
 time: November 4, 2018, 1–8pm
 site: Marketplace Garage
