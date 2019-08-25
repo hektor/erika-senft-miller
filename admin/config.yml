@@ -48,12 +48,6 @@ collections:
         required:   false
         }
       - {
-        label:      "Vimeo Number",
-        name:       "video",
-        widget:     "string",
-        required:   false
-        }
-      - {
         label:      "Body",
         name:       "body",
         widget:     "markdown"

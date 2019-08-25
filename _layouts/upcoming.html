@@ -13,6 +13,8 @@ layout: default
         <hr>
         <p class="">{{ content }}</p>
         <hr>
+        {% if page.image %}
         <img class="upcoming-image" src="{{ page.image }}">
+        {% endif %}
     </div>
 </div>
