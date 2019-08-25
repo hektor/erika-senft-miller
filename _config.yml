@@ -2,6 +2,7 @@ title: Erika Senft Miller
 description: A conceptual performance artist actively exploring and embracing the power of movement through rigorous academic research, a careful pattern of creative productivity, and in-depth multimedia integration and documentation of her work.
 baseurl: "/"
 url: "erikasenftmiller.com"
+future: true
 
 collections:
   pages:
@@ -12,7 +13,7 @@ collections:
     permalink: /:collection/:name
   upcoming:
     output: true
-    permalink: /:collection/:name   
+    permalink: /:collection/:name
   press:
     output: false
 
