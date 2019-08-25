@@ -1,10 +1,15 @@
---- 
-layout: default 
+---
+layout: default
 ---
 
 <div class="row row-full middle-xs center-xs" id="upcoming-section">
     <div class="col-xs-12 col-md-6 start-xs">
         <div class="banner-title">{{ page.title }}</div>
+        <hr>
+        <ul>
+          <li>{{ page.date | date: "%B %-d, %Y" }}</li>
+          <li>{{ page.site }}</li>
+          <li>{{ page.location }}</li>
         <hr>
         <p class="">{{ content }}</p>
         <hr>
